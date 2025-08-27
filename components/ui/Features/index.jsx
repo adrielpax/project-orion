@@ -44,6 +44,87 @@ const Features = () => {
   return (
     <SectionWrapper>
       <div id="solucoes" className="custom-screen text-white">
+        <div className="flex flex-col items-center justify-center mb-8">
+          <h1 className="text-3xl font-semibold">
+            O que fazemos para voçê e bem simples !
+          </h1>
+          <div>
+            <div className="flex items-center justify-center mt-4">
+              <div
+                className="border border-[#272727] rounded-full py-2 px-4
+              text-lg font-semibold text-white pl-0 mr-4 bg-[#272727]/30"
+              >
+                <span
+                  className="px-5 py-2 w-6 h-6 rounded-full border border-[#272727]
+                bg-gradient-to-r from-indigo-500 to-indigo-500"
+                >
+                  1
+                </span>{" "}
+                Passo um - Gatilho
+              </div>
+              <div className="flex flex-col items-start">
+                <p>
+                  Criamos o seu anuncio dentro do trafego pago ou geramos seu
+                  lead no organico
+                </p>
+                <p>
+                  Criamos o seu site, pagina, e post de anuncio diretcionado se
+                  voçê nao tem nos fazemos.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center justify-center mt-4">
+              <div
+                className="flex flex-col border border-[#272727] rounded-full py-2 px-4
+              text-lg font-semibold text-white pl-0 mr-4 bg-[#272727]/30"
+              >
+                <div>
+                  <span
+                    className="px-5 py-2 w-6 h-6 rounded-full border border-[#272727]
+                  bg-gradient-to-r from-blue-500 to-blue-500"
+                  >
+                    2
+                  </span>{" "}
+                  Passo dois - conversão com IA
+                </div>
+              </div>
+              <div className="flex flex-col items-start">
+                <p>
+                  Criamos o seu anuncio dentro do trafego pago ou geramos seu
+                  lead no organico
+                </p>
+                <p>
+                  Criamos o seu site, pagina, e post de anuncio diretcionado se
+                  voçê nao tem nos fazemos.
+                </p>
+              </div>
+            </div>
+            <div className="flex items-center justify-center mt-4">
+              <div
+                className="border border-[#272727] rounded-full py-2 px-4
+              text-lg font-semibold text-white pl-0 mr-4 bg-[#272727]/30"
+              >
+                <span
+                  className="px-5 py-2 w-6 h-6 rounded-full border border-[#272727]
+                bg-gradient-to-r from-green-500 to-green-500"
+                >
+                  3
+                </span>{" "}
+                Passo tres - Lead quente
+              </div>
+              <div className="flex flex-col items-start">
+                <p>
+                  Criamos o seu anuncio dentro do trafego pago ou geramos seu
+                  lead no organico
+                </p>
+                <p>
+                  Criamos o seu site, pagina, e post de anuncio diretcionado se
+                  voçê nao tem nos fazemos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <ul className="grid gap-x-12 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((item, idx) => (
             <li

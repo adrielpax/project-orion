@@ -3,15 +3,10 @@ import {
   AiFillThunderbolt,
   AiOutlineMail,
   AiOutlinePhone,
+  AiOutlineEnvironment,
   AiFillStar,
 } from "react-icons/ai";
-import {
-  FiSend,
-  FiUser,
-  FiMessageSquare,
-  FiSettings,
-  FiMapPin,
-} from "react-icons/fi";
+import { FiSend, FiUser, FiMessageSquare, FiSettings } from "react-icons/fi";
 
 const ContactSection = ({
   title = "Vamos Conversar",
@@ -63,7 +58,7 @@ const ContactSection = ({
       href: "tel:+5511999999999",
     },
     {
-      icon: <FiMapPin className="w-6 h-6" />,
+      icon: <AiOutlineEnvironment className="w-6 h-6" />,
       title: "Localização",
       info: "São Paulo, SP - Brasil",
       color: "text-cyan-400",
@@ -81,7 +76,7 @@ const ContactSection = ({
   ];
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="bg-black relative overflow-hidden">
       {/* Background Effects */}
       <AiFillThunderbolt className="absolute top-[20%] left-[10%] text-purple-500/10 blur-md w-80 h-80 -z-10 opacity-15 animate-pulse" />
       <AiFillThunderbolt className="absolute bottom-[10%] right-[15%] text-cyan-500/10 w-72 h-72 -z-10 opacity-20 animate-pulse" />

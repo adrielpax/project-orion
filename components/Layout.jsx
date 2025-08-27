@@ -11,7 +11,8 @@ const Layout = ({ children }) => {
         </title>
         <meta
           name="description"
-          content="Orion making it simple for you to build and grow your SaaS applications, or any business idea"
+          content="Impulsione sua empresa com automação de processos, tráfego inteligente e agentes de IA. Descubra soluções inovadoras para otimizar seu negócio. 
+          Explore como a automação pode transformar o fluxo da sua empresa e impulsionar o crescimento com soluções de tráfego e marketing inteligente."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

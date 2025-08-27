@@ -20,7 +20,7 @@ const Hero = ({
           {star_title}
           {/* Transforme sua empresa com soluções de{" "} */}
           <span
-            className="bg-gradient-to-l from-orange-400 to-indigo-900
+            className="bg-gradient-to-l from-orange-400  to-indigo-900
           text-transparent bg-clip-text z-20 font-bold"
           >
             <Typewriter words={end_title} />

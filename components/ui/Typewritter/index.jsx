@@ -42,7 +42,7 @@ export default function Typewriter({ words }) {
   }, [subIndex, index, deleting]);
 
   return (
-    <h2 className="text-4xl font-extrabold mx-auto sm:text-5xl font-bold bg-gradient-to-l from-orange-400 to-indigo-900 text-transparent bg-clip-text z-20 font-bold py-1">
+    <h2 className="text-4xl font-extrabold mx-auto sm:text-5xl font-bold bg-gradient-to-r from-indigo-600 to-orange-400 text-transparent bg-clip-text z-20 font-bold py-1">
       {text}
       <span className="border-r-4 border-indigo-600 animate-pulse ml-1" />
     </h2>
