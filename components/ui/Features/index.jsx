@@ -48,7 +48,7 @@ const Features = () => {
           <h1 className="text-3xl font-semibold">
             O que fazemos para voçê e bem simples !
           </h1>
-          <div>
+          {/* <div>
             <div className="flex items-center justify-center mt-4">
               <div
                 className="border border-[#272727] rounded-full py-2 px-4
@@ -123,7 +123,7 @@ const Features = () => {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <ul className="grid gap-x-12 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((item, idx) => (

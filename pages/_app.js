@@ -10,7 +10,7 @@ const redHat = Red_Hat_Display({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={redHat.className}>
+    <main className={`${redHat.className} -z-50`}>
       <Layout>
         <Component {...pageProps} />
       </Layout>

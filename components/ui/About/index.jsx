@@ -23,7 +23,7 @@ const Sobre = () => {
           /> */}
           <img
             className="rounded-full object-cover shadow-lg"
-            src="https://media.licdn.com/dms/image/v2/D4D03AQEdx7KBS6-w7A/profile-displayphoto-shrink_800_800/B4DZaEk0EAHwAg-/0/1745980965619?e=1756944000&v=beta&t=sgbWlYHQ6vVA3dzGC4qNZSwiXmo56HMdZz4Z2TYQvC4"
+            src="/perfil-pro.jpeg"
           />
         </div>
 

@@ -368,7 +368,7 @@ const ContactSection = ({
             </a>
             <a
               href="https://wa.me/5511999999999"
-              className="flex items-center gap-2 text-white border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 rounded-lg px-8 py-3 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50 font-medium"
+              className="flex items-center gap-2 text-white border border-green-500 bg-gradient-to-r from-green-700 via-green-800 to-green-900 rounded-lg px-8 py-3 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b hover:shadow-zinc-500/50 font-medium"
             >
               💬 WhatsApp
             </a>

@@ -15,7 +15,7 @@ const FooterCTA = () => (
           inteligente e agentes de IA.
         </p>
         <NavLink
-          href="/get-started"
+          href="/paginas/get-started"
           className="mt-4 inline-block font-medium text-sm 
           text-white border-2 border-green-500 bg-gradient-to-tr from-green-400 via-green-600 to-green-900 
               rounded-lg px-6 py-3 shadow-lg transition-all duration-300 ease-in-out active:bg-green-100 

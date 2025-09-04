@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 import {
   AiFillThunderbolt,
@@ -14,80 +15,87 @@ const ProjectGallery = ({
   const [activeFilter, setActiveFilter] = useState("all");
   const [hoveredProject, setHoveredProject] = useState(null);
 
-  // Dados de exemplo se nenhum projeto for passado
+  // Dados de exemplo se nenhum projeto for passado   image: "https://media.shellypalmer.com/wp-content/images/2025/02/google-ai.jpg",
   const defaultProjects = [
-    {
-      id: 1,
-      title: "Automação E-commerce",
-      description:
-        "Sistema completo de automação para vendas online com IA integrada para otimização de conversões.",
-      image: "/api/placeholder/400/300",
-      category: "automation",
-      tags: ["Next.js", "IA", "E-commerce"],
-      demoUrl: "#",
-      githubUrl: "#",
-      featured: true,
-    },
-    {
-      id: 2,
-      title: "Dashboard Analytics",
-      description:
-        "Painel inteligente para análise de tráfego e performance com insights em tempo real.",
-      image: "/api/placeholder/400/300",
-      category: "analytics",
-      tags: ["React", "Dashboard", "Analytics"],
-      demoUrl: "#",
-      githubUrl: "#",
-      featured: false,
-    },
-    {
-      id: 3,
-      title: "Chatbot IA",
-      description:
-        "Assistente virtual inteligente para atendimento ao cliente com processamento de linguagem natural.",
-      image: "/api/placeholder/400/300",
-      category: "ai",
-      tags: ["IA", "Chatbot", "NLP"],
-      demoUrl: "#",
-      githubUrl: "#",
-      featured: true,
-    },
-    {
-      id: 4,
-      title: "CRM Inteligente",
-      description:
-        "Sistema de gestão de relacionamento com clientes potencializado por inteligência artificial.",
-      image: "/api/placeholder/400/300",
-      category: "automation",
-      tags: ["CRM", "IA", "Automação"],
-      demoUrl: "#",
-      githubUrl: "#",
-      featured: false,
-    },
-    {
-      id: 5,
-      title: "Marketing Automation",
-      description:
-        "Plataforma de automação de marketing com segmentação inteligente e campanhas otimizadas.",
-      image: "/api/placeholder/400/300",
-      category: "marketing",
-      tags: ["Marketing", "Automação", "Campanhas"],
-      demoUrl: "#",
-      githubUrl: "#",
-      featured: false,
-    },
-    {
-      id: 6,
-      title: "Análise Preditiva",
-      description:
-        "Ferramenta de análise preditiva para forecasting de vendas e tendências de mercado.",
-      image: "/api/placeholder/400/300",
-      category: "analytics",
-      tags: ["Análise", "Predição", "Machine Learning"],
-      demoUrl: "#",
-      githubUrl: "#",
-      featured: true,
-    },
+  
+    // {
+    //   id: 1,
+    //   title: "Automação E-commerce",
+    //   description:
+    //     "Sistema completo de automação para vendas online com IA integrada para otimização de conversões.",
+    //   image:
+    //     "https://media.shellypalmer.com/wp-content/images/2025/02/google-ai.jpg",
+    //   category: "automation",
+    //   tags: ["Next.js", "IA", "E-commerce"],
+    //   demoUrl: "#",
+    //   githubUrl: "#",
+    //   featured: true,
+    // },
+    // {
+    //   id: 2,
+    //   title: "Dashboard Analytics",
+    //   description:
+    //     "Painel inteligente para análise de tráfego e performance com insights em tempo real.",
+    //   image:
+    //     "https://media.shellypalmer.com/wp-content/images/2025/02/google-ai.jpg",
+    //   category: "analytics",
+    //   tags: ["React", "Dashboard", "Analytics"],
+    //   demoUrl: "#",
+    //   githubUrl: "#",
+    //   featured: false,
+    // },
+    // {
+    //   id: 3,
+    //   title: "Chatbot IA",
+    //   description:
+    //     "Assistente virtual inteligente para atendimento ao cliente com processamento de linguagem natural.",
+    //   image:
+    //     "https://media.shellypalmer.com/wp-content/images/2025/02/google-ai.jpg",
+    //   category: "ai",
+    //   tags: ["IA", "Chatbot", "NLP"],
+    //   demoUrl: "#",
+    //   githubUrl: "#",
+    //   featured: true,
+    // },
+    // {
+    //   id: 4,
+    //   title: "CRM Inteligente",
+    //   description:
+    //     "Sistema de gestão de relacionamento com clientes potencializado por inteligência artificial.",
+    //   image:
+    //     "https://media.shellypalmer.com/wp-content/images/2025/02/google-ai.jpg",
+    //   category: "automation",
+    //   tags: ["CRM", "IA", "Automação"],
+    //   demoUrl: "#",
+    //   githubUrl: "#",
+    //   featured: false,
+    // },
+    // {
+    //   id: 5,
+    //   title: "Marketing Automation",
+    //   description:
+    //     "Plataforma de automação de marketing com segmentação inteligente e campanhas otimizadas.",
+    //   image:
+    //     "https://media.shellypalmer.com/wp-content/images/2025/02/google-ai.jpg",
+    //   category: "marketing",
+    //   tags: ["Marketing", "Automação", "Campanhas"],
+    //   demoUrl: "#",
+    //   githubUrl: "#",
+    //   featured: false,
+    // },
+    // {
+    //   id: 6,
+    //   title: "Análise Preditiva",
+    //   description:
+    //     "Ferramenta de análise preditiva para forecasting de vendas e tendências de mercado.",
+    //   image:
+    //     "https://media.shellypalmer.com/wp-content/images/2025/02/google-ai.jpg",
+    //   category: "analytics",
+    //   tags: ["Análise", "Predição", "Machine Learning"],
+    //   demoUrl: "#",
+    //   githubUrl: "#",
+    //   featured: true,
+    // },
   ];
 
   const projectsData = projects.length > 0 ? projects : defaultProjects;
@@ -106,7 +114,7 @@ const ProjectGallery = ({
       : projectsData.filter((project) => project.category === activeFilter);
 
   return (
-    <section className="min-h-screen relative overflow-hidden">
+    <section className="min-h-screen relative overflow-hidden z-0">
       {/* Background Effects */}
       <AiFillThunderbolt className="absolute top-[10%] left-[20%] text-cyan-500/10 blur-md w-64 h-64 -z-10 opacity-20 animate-pulse" />
       <AiFillThunderbolt className="absolute bottom-[20%] right-[15%] text-yellow-500/10 w-80 h-80 -z-10 opacity-20 animate-pulse" />
@@ -133,7 +141,7 @@ const ProjectGallery = ({
               className={`px-6 py-3 rounded-lg font-medium text-sm transition-all duration-300 ease-in-out ${
                 activeFilter === category.id
                   ? "text-white border-2 border-indigo-500 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 shadow-lg hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50"
-                  : "text-white border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 hover:border-zinc-100 hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50"
+                  : "text-white border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 hover:border-zinc-100 hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b hover:shadow-zinc-500/50"
               }`}
             >
               {category.label}
@@ -146,7 +154,7 @@ const ProjectGallery = ({
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className={`relative group rounded-xl overflow-hidden transition-all duration-500 ease-in-out transform hover:scale-105 ${
+              className={`z-30 relative group rounded-xl overflow-hidden transition-all duration-500 ease-in-out transform hover:scale-105 ${
                 project.featured
                   ? "bg-gradient-to-br from-indigo-900/30 via-purple-800/20 to-indigo-900/30 border-2 border-indigo-500/50"
                   : "bg-gradient-to-br from-zinc-900/80 via-zinc-800/60 to-zinc-900/80 border border-gray-700/50"
@@ -191,52 +199,54 @@ const ProjectGallery = ({
                       : "opacity-0 scale-95"
                   }`}
                 >
-                  <a
+                  <Link
                     href={project.demoUrl}
                     className="flex items-center gap-2 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 text-white px-4 py-2 rounded-lg font-medium text-sm shadow-lg hover:shadow-indigo-500/50 transition-all duration-300 hover:scale-105"
                   >
                     <AiOutlineEye className="w-4 h-4" />
-                    Demo
-                  </a>
-                  <a
+                    ver mais
+                  </Link>
+                  {/* <a
                     href={project.githubUrl}
                     className="flex items-center gap-2 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 text-white px-4 py-2 rounded-lg font-medium text-sm shadow-lg hover:shadow-zinc-500/50 transition-all duration-300 hover:scale-105"
                   >
                     <AiOutlineGithub className="w-4 h-4" />
                     Código
-                  </a>
+                  </a> */}
                 </div>
               </div>
+              <Link href={project.demoUrl}>
+                {/* Project Info */}
+                <div className="p-6">
+                  <div className="flex items-start justify-between mb-3">
+                    <h3 className="text-xl font-bold text-white group-hover:text-transparent group-hover:bg-gradient-to-l group-hover:from-orange-400 group-hover:to-indigo-400 group-hover:bg-clip-text transition-all duration-300">
+                      {project.title}
+                    </h3>
 
-              {/* Project Info */}
-              <div className="p-6">
-                <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-xl font-bold text-white group-hover:text-transparent group-hover:bg-gradient-to-l group-hover:from-orange-400 group-hover:to-indigo-400 group-hover:bg-clip-text transition-all duration-300">
-                    {project.title}
-                  </h3>
-                  <FiExternalLink className="w-5 h-5 text-gray-400 group-hover:text-indigo-400 transition-colors duration-300" />
+                    <FiExternalLink className="w-5 h-5 text-gray-400 group-hover:text-indigo-400 transition-colors duration-300" />
+                  </div>
+
+                  <p className="text-gray-300 text-sm leading-relaxed mb-4">
+                    {project.description}
+                  </p>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2">
+                    {project.tags.map((tag, index) => (
+                      <span
+                        key={index}
+                        className={`text-xs px-3 py-1 rounded-full font-medium ${
+                          project.featured
+                            ? "bg-indigo-500/20 text-indigo-300 border border-indigo-500/30"
+                            : "bg-zinc-700/50 text-gray-300 border border-gray-600/50"
+                        }`}
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-
-                <p className="text-gray-300 text-sm leading-relaxed mb-4">
-                  {project.description}
-                </p>
-
-                {/* Tags */}
-                <div className="flex flex-wrap gap-2">
-                  {project.tags.map((tag, index) => (
-                    <span
-                      key={index}
-                      className={`text-xs px-3 py-1 rounded-full font-medium ${
-                        project.featured
-                          ? "bg-indigo-500/20 text-indigo-300 border border-indigo-500/30"
-                          : "bg-zinc-700/50 text-gray-300 border border-gray-600/50"
-                      }`}
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-              </div>
+              </Link>
             </div>
           ))}
         </div>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { TableProperties, HandCoins,HeartHandshake, FlaskConical } from 'lucide-react';
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Brand from "../Brand";
@@ -10,11 +11,9 @@ const Navbar = () => {
   const { events } = useRouter();
 
   const navigation = [
-    // { title: "Projetos", path: "/projetos" },
-    // { title: "Serviços", path: "/serviços" },
-    { title: "Soluções", path: "#solucoes" },
-    { title: "Sobre nós", path: "#sobre" },
-    { title: "Resultados", path: "#resultados" },
+    { icon: <TableProperties/>, title: "Projetos", path: "/paginas/projetos" },
+    { icon: <HandCoins/>, title: "Serviços", path: "/paginas/servicos" },
+    { icon: <FlaskConical/>, title: "Gerador de Conteudo", path: "/pagina-produto/Dashboard-Inteligente-de-Custos-e-Vendas" },
   ];
 
   useEffect(() => {
@@ -33,13 +32,13 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-zinc-900 top-0 left-0 w-full z-50 bg-blur-md backdrop-blur-md">
+    <header className="bg-transparent top-0 left-0 w-full -z-10 bg-blur-md backdrop-blur-md">
       <nav
-        className={`bg-zinc-900 w-full md:static md:text-sm ${
-          state ? "fixed z-10 h-full" : ""
+        className={` w-full md:static md:text-sm ${
+          state ? "fixed z-10 h-full bg-zinc-800" : ""
         }`}
       >
-        <div className="custom-screen items-center mx-auto md:flex bg-zinc-900">
+        <div className="custom-screen items-center mx-auto md:flex ">
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Brand />
             <div className="md:hidden">
@@ -87,46 +86,37 @@ const Navbar = () => {
             }`}
           >
             <ul className="bg-zync-900 z-100 text-white justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0 md:text-white md:font-medium">
-              <li className="duration-150 hover:text-indigo-600">
-                <Link href={"/projetos"} className="block">
-                  Projetos
-                </Link>
-              </li>
-              <li className="duration-150 hover:text-indigo-600">
-                <Link href={"/servicos"} className="block">
-                  Serviços
-                </Link>
-              </li>
-              <li className="duration-150 hover:text-indigo-600">
-                <Link href={"/Blog"} className="block">
-                  Blog
-                </Link>
-              </li>
-              {router.pathname === "/" &&
-                navigation.map((item, idx) => {
-                  return (
-                    <li
-                      key={idx}
-                      className="duration-150 hover:text-indigo-600"
+      
+              {navigation.map((item, idx) => {
+                return (
+                  <li
+                    key={idx}
+                    className={`${
+                      router.pathname == item.path && "text-indigo-500"
+                    } duration-150 hover:text-indigo-500`}
+                  >
+                    <Link
+                      href={item.path}
+                      className="flex justify-center items-center gap-2"
                     >
-                      <Link href={item.path} className="block">
-                        {item.title}
-                      </Link>
-                    </li>
-                  );
-                })}
-              {!router.pathname.includes("/get-started") && (
+                      {item.icon}
+                      {item.title}
+                    </Link>
+                  </li>
+                );
+              })}
+              {!router.pathname.includes("/paginas/get-started") && (
                 <li>
                   <div className="flex justify-center items-center space-x-4">
                     <NavLink
-                      href="/get-started"
-                      className="text-white border-2 border-indigo-500 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 
+                      href="/paginas/get-started"
+                      className="text-white border-2 border-indigo-500 bg-gradient-to-tr 
                     rounded-lg px-6 py-3 shadow-lg transition-all duration-300 ease-in-out active:bg-indigo-100 
                     hover:text-white hover:border-indigo-100 hover:scale-105 hover:shadow-xl 
                     hover:bg-gradient-to-b from-indigo-400 via-indigo-600 to-indigo-900 
-                    hover:shadow-indigo-500/50"
+                    hover:shadow-indigo-500/50 flex gap-2 items-center justify-center"
                     >
-                      Vamos Colaborar 🚀
+                      <HeartHandshake/> Vamos Colaborar 🚀
                     </NavLink>
                   </div>
                 </li>

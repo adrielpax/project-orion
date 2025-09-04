@@ -1,7 +1,3 @@
-//  style={{
-//         background:
-//           "linear-gradient(202.72deg, rgba(238, 127, 76, 0.26) 14.76%, rgba(152, 103, 240, 0.04) 34.37%, rgba(152, 103, 240, 0) 86.62%)",
-//       }}
 const GradientWrapper = ({ children, ...props }) => (
   <div
     {...props}

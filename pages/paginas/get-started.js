@@ -81,7 +81,7 @@ const ContactSection = ({
   ];
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden z-0">
       {/* Background Effects */}
       <AiFillThunderbolt className="absolute top-[20%] left-[10%] text-purple-500/10 blur-md w-80 h-80 -z-10 opacity-15 animate-pulse" />
       <AiFillThunderbolt className="absolute bottom-[10%] right-[15%] text-cyan-500/10 w-72 h-72 -z-10 opacity-20 animate-pulse" />
@@ -373,7 +373,7 @@ const ContactSection = ({
             </a>
             <a
               href="https://wa.me/5511999999999"
-              className="flex items-center gap-2 text-white border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 rounded-lg px-8 py-3 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50 font-medium"
+              className="flex items-center gap-2 text-white border border-green-500 bg-gradient-to-r from-green-700 via-green-800 to-green-900 rounded-lg px-8 py-3 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b hover:shadow-zinc-500/50 font-medium"
             >
               💬 WhatsApp
             </a>

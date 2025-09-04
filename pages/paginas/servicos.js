@@ -13,103 +13,103 @@ const ServicesSection = ({
   const [hoveredService, setHoveredService] = useState(null);
 
   const services = [
-    {
-      id: 1,
-      icon: <FiCpu className="w-8 h-8" />,
-      title: "Automação com IA",
-      description:
-        "Sistemas inteligentes que automatizam processos complexos e aumentam a eficiência operacional.",
-      features: [
-        "Chatbots Inteligentes",
-        "Automação de Processos",
-        "Integração APIs",
-        "Análise Preditiva",
-      ],
-      price: "A partir de R$ 2.500",
-      priceDetail: "/mês",
-      popular: true,
-      color: "indigo",
-    },
-    {
-      id: 2,
-      icon: <FiTrendingUp className="w-8 h-8" />,
-      title: "Marketing Digital",
-      description:
-        "Estratégias de marketing digital personalizadas com foco em conversão e ROI.",
-      features: [
-        "Campanhas Google Ads",
-        "Social Media",
-        "SEO/SEM",
-        "Email Marketing",
-      ],
-      price: "A partir de R$ 1.800",
-      priceDetail: "/mês",
-      popular: false,
-      color: "orange",
-    },
-    {
-      id: 3,
-      icon: <FiBarChart className="w-8 h-8" />,
-      title: "Analytics & BI",
-      description:
-        "Dashboards inteligentes e análises avançadas para tomada de decisões estratégicas.",
-      features: [
-        "Dashboards Customizados",
-        "Relatórios Automáticos",
-        "KPIs em Tempo Real",
-        "Data Mining",
-      ],
-      price: "A partir de R$ 3.200",
-      priceDetail: "/mês",
-      popular: false,
-      color: "cyan",
-    },
-    {
-      id: 4,
-      icon: <FiSettings className="w-8 h-8" />,
-      title: "Desenvolvimento Web",
-      description:
-        "Aplicações web modernas, responsivas e otimizadas para performance e conversão.",
-      features: ["Sites Responsivos", "E-commerce", "Sistemas Web", "PWA"],
-      price: "A partir de R$ 5.500",
-      priceDetail: "/projeto",
-      popular: false,
-      color: "purple",
-    },
-    {
-      id: 5,
-      icon: <FiCpu className="w-8 h-8" />,
-      title: "Consultoria Tech",
-      description:
-        "Consultoria especializada em transformação digital e otimização de processos tecnológicos.",
-      features: [
-        "Auditoria Técnica",
-        "Estratégia Digital",
-        "Treinamentos",
-        "Suporte Contínuo",
-      ],
-      price: "A partir de R$ 280",
-      priceDetail: "/hora",
-      popular: false,
-      color: "green",
-    },
-    {
-      id: 6,
-      icon: <AiFillThunderbolt className="w-8 h-8" />,
-      title: "Pacote Completo",
-      description:
-        "Solução completa incluindo automação, marketing digital e analytics em um pacote integrado.",
-      features: [
-        "Todos os Serviços",
-        "Suporte 24/7",
-        "Reuniões Semanais",
-        "Relatórios Mensais",
-      ],
-      price: "A partir de R$ 6.800",
-      priceDetail: "/mês",
-      popular: true,
-      color: "gradient",
-    },
+    // {
+    //   id: 1,
+    //   icon: <FiCpu className="w-8 h-8" />,
+    //   title: "Automação com IA",
+    //   description:
+    //     "Sistemas inteligentes que automatizam processos complexos e aumentam a eficiência operacional.",
+    //   features: [
+    //     "Chatbots Inteligentes",
+    //     "Automação de Processos",
+    //     "Integração APIs",
+    //     "Análise Preditiva",
+    //   ],
+    //   price: "A partir de R$ 2.500",
+    //   priceDetail: "/mês",
+    //   popular: true,
+    //   color: "indigo",
+    // },
+    // {
+    //   id: 2,
+    //   icon: <FiTrendingUp className="w-8 h-8" />,
+    //   title: "Marketing Digital",
+    //   description:
+    //     "Estratégias de marketing digital personalizadas com foco em conversão e ROI.",
+    //   features: [
+    //     "Campanhas Google Ads",
+    //     "Social Media",
+    //     "SEO/SEM",
+    //     "Email Marketing",
+    //   ],
+    //   price: "A partir de R$ 1.800",
+    //   priceDetail: "/mês",
+    //   popular: false,
+    //   color: "orange",
+    // },
+    // {
+    //   id: 3,
+    //   icon: <FiBarChart className="w-8 h-8" />,
+    //   title: "Analytics & BI",
+    //   description:
+    //     "Dashboards inteligentes e análises avançadas para tomada de decisões estratégicas.",
+    //   features: [
+    //     "Dashboards Customizados",
+    //     "Relatórios Automáticos",
+    //     "KPIs em Tempo Real",
+    //     "Data Mining",
+    //   ],
+    //   price: "A partir de R$ 3.200",
+    //   priceDetail: "/mês",
+    //   popular: false,
+    //   color: "cyan",
+    // },
+    // {
+    //   id: 4,
+    //   icon: <FiSettings className="w-8 h-8" />,
+    //   title: "Desenvolvimento Web",
+    //   description:
+    //     "Aplicações web modernas, responsivas e otimizadas para performance e conversão.",
+    //   features: ["Sites Responsivos", "E-commerce", "Sistemas Web", "PWA"],
+    //   price: "A partir de R$ 5.500",
+    //   priceDetail: "/projeto",
+    //   popular: false,
+    //   color: "purple",
+    // },
+    // {
+    //   id: 5,
+    //   icon: <FiCpu className="w-8 h-8" />,
+    //   title: "Consultoria Tech",
+    //   description:
+    //     "Consultoria especializada em transformação digital e otimização de processos tecnológicos.",
+    //   features: [
+    //     "Auditoria Técnica",
+    //     "Estratégia Digital",
+    //     "Treinamentos",
+    //     "Suporte Contínuo",
+    //   ],
+    //   price: "A partir de R$ 280",
+    //   priceDetail: "/hora",
+    //   popular: false,
+    //   color: "green",
+    // },
+    // {
+    //   id: 6,
+    //   icon: <AiFillThunderbolt className="w-8 h-8" />,
+    //   title: "Pacote Completo",
+    //   description:
+    //     "Solução completa incluindo automação, marketing digital e analytics em um pacote integrado.",
+    //   features: [
+    //     "Todos os Serviços",
+    //     "Suporte 24/7",
+    //     "Reuniões Semanais",
+    //     "Relatórios Mensais",
+    //   ],
+    //   price: "A partir de R$ 6.800",
+    //   priceDetail: "/mês",
+    //   popular: true,
+    //   color: "gradient",
+    // },
   ];
 
   const getColorClasses = (color, isHovered) => {
@@ -167,7 +167,7 @@ const ServicesSection = ({
   };
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden z-0">
       {/* Background Effects */}
       <AiFillThunderbolt className="absolute top-[5%] right-[10%] text-indigo-500/10 blur-md w-72 h-72 -z-10 opacity-15 animate-pulse" />
       <AiFillThunderbolt className="absolute bottom-[15%] left-[5%] text-orange-500/10 w-64 h-64 -z-10 opacity-20 animate-pulse" />

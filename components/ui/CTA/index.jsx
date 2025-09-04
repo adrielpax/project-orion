@@ -30,7 +30,7 @@ const CTA = () => {
               vida do desenvolvimento do projeto.
             </p>
             <NavLink
-              href="/get-started"
+              href="/paginas/get-started"
               className="flex items-center gap-2 inline-block mt-4 font-medium text-sm
               text-white border-2 border-orange-500 bg-gradient-to-tr from-orange-400 via-orange-600 to-orange-900 
               rounded-lg px-6 py-3 shadow-lg transition-all duration-300 ease-in-out active:bg-orange-100 w-[fit-content]
