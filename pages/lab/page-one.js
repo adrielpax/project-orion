@@ -253,7 +253,7 @@ const HeroSection = ({ data }) => (
     <AiFillThunderbolt className="absolute top-[10%] left-[20%] text-cyan-500/10 blur-md w-96 h-96 -z-10 opacity-20 animate-pulse" />
     <AiFillThunderbolt className="absolute bottom-[20%] right-[15%] text-yellow-500/10 w-80 h-80 -z-10 opacity-20 animate-pulse" />
 
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 text-white relative z-10">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 text-white relative">
       <div className="text-center space-y-8 max-w-4xl mx-auto">
         <div className="inline-block bg-gradient-to-r from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 rounded-full px-6 py-2 mb-6">
           <span className="text-indigo-300 font-medium">{data.badgeText}</span>
