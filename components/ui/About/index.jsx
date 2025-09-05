@@ -22,7 +22,7 @@ const Sobre = () => {
             className="rounded-2xl shadow-xl object-cover"
           /> */}
           <img
-            className="rounded-full object-cover shadow-lg scale-75"
+            className="rounded-full object-cover shadow-lg scale-75 select-none"
             src="/perfil-pro.jpeg"
           />
         </div>

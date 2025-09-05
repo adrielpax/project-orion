@@ -382,9 +382,9 @@ const DataAutomationLanding = () => {
 
             <div className="relative">
               <div className="bg-gradient-to-br from-indigo-900/30 via-purple-800/20 to-orange-900/30 border-2 border-indigo-500/30 rounded-2xl p-8 backdrop-blur-sm">
-                <div className="text-center mb-8">
+                {/* <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold text-white mb-4">
-                    Dashboard em Tempo Real
+                    Dashboard em Tempo Real 
                   </h3>
                   <div className="h-64 bg-gradient-to-br from-zinc-900/80 to-zinc-800/60 rounded-lg border border-gray-600/50 flex items-center justify-center">
                     <div className="text-center text-gray-400">
@@ -395,7 +395,7 @@ const DataAutomationLanding = () => {
                       </p>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className="grid grid-cols-3 gap-4 text-center">
                   <div className="p-4 bg-black/30 rounded-lg border border-gray-600/30">
                     <div className="text-2xl font-bold text-green-400">
@@ -405,7 +405,7 @@ const DataAutomationLanding = () => {
                   </div>
                   <div className="p-4 bg-black/30 rounded-lg border border-gray-600/30">
                     <div className="text-2xl font-bold text-cyan-400">2.3s</div>
-                    <div className="text-sm text-gray-400">Processamento</div>
+                    <div className="text-sm text-gray-400">Velocidade</div>
                   </div>
                   <div className="p-4 bg-black/30 rounded-lg border border-gray-600/30">
                     <div className="text-2xl font-bold text-orange-400">
