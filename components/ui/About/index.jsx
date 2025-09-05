@@ -9,7 +9,7 @@ const Sobre = () => {
   return (
     <section
       id="sobre"
-      className="bg-gradient-to-tl border-y border-[#272727] from-zinc-900 via-black to-zinc-900 text-white py-24"
+      className="border-y border-[#272727] text-white py-24"
     >
       <div className="custom-screen grid md:grid-cols-2 gap-10 items-center">
         {/* Imagem do fundador */}
@@ -22,7 +22,7 @@ const Sobre = () => {
             className="rounded-2xl shadow-xl object-cover"
           /> */}
           <img
-            className="rounded-full object-cover shadow-lg"
+            className="rounded-full object-cover shadow-lg scale-75"
             src="/perfil-pro.jpeg"
           />
         </div>

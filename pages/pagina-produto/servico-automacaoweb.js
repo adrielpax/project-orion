@@ -1,4 +1,8 @@
 import { useState, useEffect } from "react";
+import { FaInstagram } from "react-icons/fa";
+import { SiCloudflarepages } from "react-icons/si";
+import { BsStars } from "react-icons/bs";
+import Sobre from '../../components/ui/About'
 import {
   AiFillThunderbolt,
   AiFillStar,
@@ -41,32 +45,32 @@ const DataAutomationLanding = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const words = ["Processos de Dados", "Relatórios", "Dashboards", "Análises"];
 
-  useEffect(() => {
-    const currentWord = words[currentWordIndex];
-    let index = 0;
+  // useEffect(() => {
+  //   const currentWord = words[currentWordIndex];
+  //   let index = 0;
 
-    const typeInterval = setInterval(() => {
-      if (index < currentWord.length) {
-        setDisplayedText(currentWord.substring(0, index + 1));
-        index++;
-      } else {
-        setTimeout(() => {
-          // Clear text
-          const clearInterval = setInterval(() => {
-            setDisplayedText(currentWord.substring(0, index));
-            index--;
-            if (index < 0) {
-              clearInterval(clearInterval);
-              setCurrentWordIndex((prev) => (prev + 1) % words.length);
-            }
-          }, 100);
-        }, 2000);
-        clearInterval(typeInterval);
-      }
-    }, 150);
+  //   const typeInterval = setInterval(() => {
+  //     if (index < currentWord.length) {
+  //       setDisplayedText(currentWord.substring(0, index + 1));
+  //       index++;
+  //     } else {
+  //       setTimeout(() => {
+  //         // Clear text
+  //         const clearInterval = setInterval(() => {
+  //           setDisplayedText(currentWord.substring(0, index));
+  //           index--;
+  //           if (index < 0) {
+  //             clearInterval(clearInterval);
+  //             setCurrentWordIndex((prev) => (prev + 1) % words.length);
+  //           }
+  //         }, 100);
+  //       }, 2000);
+  //       clearInterval(typeInterval);
+  //     }
+  //   }, 150);
 
-    return () => clearInterval(typeInterval);
-  }, [currentWordIndex]);
+  //   return () => clearInterval(typeInterval);
+  // }, [currentWordIndex]);
 
   // Testimonials
   const testimonials = [
@@ -147,68 +151,74 @@ const DataAutomationLanding = () => {
   const features = [
     {
       icon: <FiDatabase className="w-6 h-6" />,
-      title: "Integração Multi-fontes",
-      description: "Conecte Excel, SQL, APIs, CRM e qualquer fonte de dados",
+      title: "Integração Fonte de Dados",
+      description: "Conecte Google Sheets, Supabase e APIs",
     },
     {
-      icon: <FiBarChart className="w-6 h-6" />,
-      title: "Dashboards Inteligentes",
-      description: "Visualizações automáticas com insights em tempo real",
+      icon: <BsStars className="w-6 h-6" />,
+      title: "Inteligencia Artificial",
+      description: "Entrega com o que há de melhor no mercado",
     },
     {
-      icon: <FiSettings className="w-6 h-6" />,
-      title: "Automação Completa",
-      description: "Coleta, processamento e distribuição 100% automatizada",
+      icon: <SiCloudflarepages className="w-6 h-6" />,
+      title: "Super Pagina",
+      description: "Sua Pagina com um Plus",
     },
     {
-      icon: <FiUsers className="w-6 h-6" />,
-      title: "Colaboração em Equipe",
-      description: "Compartilhamento seguro e controle de acesso granular",
+      icon: <FaInstagram className="w-6 h-6" />,
+      title: "Redes Sociais Automatizadas",
+      description: "Leads, conversas, atendimento",
     },
-    {
-      icon: <FiTarget className="w-6 h-6" />,
-      title: "Alertas Inteligentes",
-      description: "Notificações automáticas baseadas em KPIs críticos",
-    },
-    {
-      icon: <FiShield className="w-6 h-6" />,
-      title: "Segurança Enterprise",
-      description: "Criptografia avançada e compliance com LGPD",
-    },
+    // {
+    //   icon: <FiTarget className="w-6 h-6" />,
+    //   title: "Alertas Inteligentes",
+    //   description: "Notificações automáticas baseadas em KPIs críticos",
+    // },
+    // {
+    //   icon: <FiShield className="w-6 h-6" />,
+    //   title: "Segurança com seus Dados",
+    //   description: "Criptografia avançada e compliance com LGPD",
+    // },
   ];
 
   const pricingPlans = [
     {
       name: "Starter",
-      price: "R$ 1.997",
+      price: "Free ou 19,90",
       period: "/mês",
       popular: false,
       features: [
-        "Até 3 fontes de dados",
-        "2 dashboards personalizados",
-        "Relatórios automáticos",
-        "Suporte por email",
-        "Atualizações horárias",
-      ],
+        "Automação para Google Sheets",
+        "Automação de mensagens para o Instagram",
+        "Acesso a IA que gera POSTs (ate 5 Posts por dia)",
+        "Chatbot para seu WhatsApp",
+        "LinkTree - Free",
+        "SEO para seu Google Negocios"
+        ],
     },
     {
-      name: "Professional",
-      price: "R$ 3.997",
+      name: "Avançe",
+      price: "R$ 47",
       period: "/mês",
       popular: true,
       features: [
-        "Fontes de dados ilimitadas",
-        "Dashboards ilimitados",
-        "BI avançado com IA",
-        "Suporte prioritário",
-        "Atualizações em tempo real",
-        "Alertas personalizados",
-        "Treinamento da equipe",
+        "Tudo do plano Start",
+        "AI de POSTs( 100 posts diarios )",
+        "AI para seu Whatsapp bussines",
+        "Automação de Processo ja Existente"
+
+        // "Fontes de dados ilimitadas",
+        // "Dashboards ilimitados",
+        // "BI avançado com IA",
+        // "Suporte prioritário",
+        // "Atualizações em tempo real",
+        // "Alertas personalizados",
+        // "Treinamento da equipe",
       ],
     },
     {
-      name: "Enterprise",
-      price: "R$ 7.997",
+      name: "Stark",
+      price: "R$ 97",
       period: "/mês",
       popular: false,
       features: [
@@ -216,7 +226,6 @@ const DataAutomationLanding = () => {
         "Servidor dedicado",
         "Customizações ilimitadas",
         "Gerente de conta dedicado",
-        "SLA de 99.9%",
         "Integração white-label",
         "Consultoria estratégica",
       ],
@@ -234,28 +243,47 @@ const DataAutomationLanding = () => {
           <div className="text-center space-y-8 max-w-4xl mx-auto">
             <div className="inline-block bg-gradient-to-r from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 rounded-full px-6 py-2 mb-6">
               <span className="text-indigo-300 font-medium">
-                🚀 Transformação Digital de Dados
+                🚀 Bem vindo ao seu Start de Transformação Digital
               </span>
             </div>
 
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
               Automatize seus{" "}
               <span className="bg-gradient-to-l from-orange-400 to-indigo-900 text-transparent bg-clip-text">
-                {displayedText}
+                
+                {"Processos de Redes Sociais web"} 
                 <span className="animate-pulse">|</span>
+               
               </span>
             </h1>
+            
 
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Transforme horas de trabalho manual em minutos automatizados.
-              Nossa IA processa, analisa e entrega insights de dados em tempo
-              real, liberando sua equipe para decisões estratégicas.
+              Nossa IA trabalha, para te entregar conteudos de alto valor, seja no seu {""}
+              <span className="text-orange-500">
+                Atendimento com IA humanizado,{" "}
+                </span>
+              
+              <span className="text-cyan-600">
+                {" "}Posts de midias sociais gerado com IA, {""}
+              </span>
+              <span className="text-green-500">
+
+              {""}Automação de Leads e publico e{" "}
+              </span>
+
+              <span className="text-yellow-400">
+
+              {" "}Automação de processos personalizados.
+              </span>
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8">
               <button className="flex items-center gap-3 text-white border-2 border-indigo-500 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 rounded-lg px-8 py-4 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50 font-semibold text-lg animate-pulse">
                 <AiFillThunderbolt className="text-orange-600 w-6 h-6" />
-                Automatizar Agora - Grátis 30 dias
+                {/* Automatizar Agora - Grátis 30 dias */}
+                Automatizar Agora - Grátis {"   "}
               </button>
               <button className="flex items-center gap-3 text-white border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 rounded-lg px-8 py-4 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50 font-semibold">
                 <AiFillPlayCircle className="w-6 h-6" />
@@ -279,7 +307,7 @@ const DataAutomationLanding = () => {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-24 relative">
+      <section className="py-24 relative bg-transparent">
         <AiFillThunderbolt className="absolute top-[10%] right-[10%] text-purple-500/10 blur-md w-72 h-72 -z-10 opacity-15 animate-pulse" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -392,6 +420,7 @@ const DataAutomationLanding = () => {
           </div>
         </div>
       </section>
+      <Sobre/>
 
       {/* Testimonials Section */}
       <section className="py-24 relative">
@@ -809,7 +838,7 @@ const DataAutomationLanding = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-zinc-900/50 border-t border-gray-800 py-12">
+      {/* <footer className="bg-zinc-900/50 border-t border-gray-800 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <div className="flex items-center justify-center gap-2 mb-6">
@@ -964,7 +993,7 @@ const DataAutomationLanding = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 };
