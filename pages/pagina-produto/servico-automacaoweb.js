@@ -1,4 +1,7 @@
 import { useState, useEffect } from "react";
+import NavLink from "../../components/ui/NavLink";
+import Hero from "../../components/ui/Hero";
+import StepByStep from "../../components/StepByStep";
 import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 import { SiCloudflarepages } from "react-icons/si";
@@ -75,6 +78,21 @@ const DataAutomationLanding = () => {
   // }, [currentWordIndex]);
 
   // Testimonials
+  const hero_section = {
+    star_title: "Inpulsione sua empresa com",
+    end_title: [
+      "Automação de Processos",
+      "Tráfego e SEO Inteligente",
+      "Agentes de IAs",
+      "Marketing Branding",
+      "Sites e Web Development",
+    ],
+    // end_title: "automação e tráfego inteligente com agentes de IA",
+    impact_text:
+      "👉 “A Orion automatiza processos para pequenos negócios e empresas, integrando WhatsApp, planilhas, sistemas e vendas em um só fluxo.”",
+    CTA_buttons: true,
+  };
+
   const testimonials = [
     {
       name: "Carlos Silva",
@@ -236,73 +254,17 @@ const DataAutomationLanding = () => {
 
   return (
     <div className=" min-h-screen z-0">
-     
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <AiFillThunderbolt className="absolute top-[10%] left-[20%] text-cyan-500/10 blur-md w-96 h-96 -z-10 opacity-20 animate-pulse" />
         <AiFillThunderbolt className="absolute bottom-[20%] right-[15%] text-yellow-500/10 w-80 h-80 -z-10 opacity-20 animate-pulse" />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 pt-8 text-white relative ">
-          <div className="text-center space-y-8 max-w-4xl mx-auto">
-            <div className="inline-block bg-gradient-to-r from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 rounded-full px-6 py-2 mb-6">
-              <span className="text-indigo-300 font-medium">
-                🚀 Start de Transformação Digital
-              </span>
-            </div>
-
-            <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold leading-tight">
-              Automatize seus{" "}
-              <span className="bg-gradient-to-l from-orange-400 to-indigo-900 text-transparent bg-clip-text">
-                {"Processos de Redes Sociais web"}
-                <span className="animate-pulse">|</span>
-              </span>
-            </h1>
-
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Transforme horas de trabalho manual em minutos automatizados.
-              Nossa IA trabalha, para te entregar conteudos de alto valor, seja
-              no seu {""}
-              <span className="text-orange-500">
-                Atendimento com IA humanizado,{" "}
-              </span>
-              <span className="text-cyan-600">
-                {" "}
-                Posts de midias sociais gerado com IA, {""}
-              </span>
-              <span className="text-green-500">
-                {""}Automação de Leads e publico e{" "}
-              </span>
-              <span className="text-yellow-400">
-                {" "}
-                Automação de processos personalizados.
-              </span>
-            </p>
-
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8">
-              <button className="flex items-center gap-3 text-white border-2 border-indigo-500 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 rounded-lg px-8 py-4 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50 font-semibold text-lg animate-pulse">
-                <AiFillThunderbolt className="text-orange-600 w-6 h-6" />
-                {/* Automatizar Agora - Grátis 30 dias */}
-                Automatizar Agora - Grátis {"   "}
-              </button>
-              <button className="flex items-center gap-3 text-white border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 rounded-lg px-8 py-4 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50 font-semibold">
-                <AiFillPlayCircle className="w-6 h-6" />
-                Ver Demonstração (3 min)
-              </button>
-            </div>
-
-            <div className="pt-12">
-              <p className="text-gray-400 mb-4">
-                Empresas que já transformaram seus dados:
-              </p>
-              <div className="flex flex-wrap justify-center items-center gap-8 opacity-60">
-                <div className="text-2xl font-bold">TechCorp</div>
-                <div className="text-2xl font-bold">DataFlow</div>
-                <div className="text-2xl font-bold">InnovaSoft</div>
-                <div className="text-2xl font-bold">SmartBI</div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Hero
+          star_title={hero_section.star_title}
+          end_title={hero_section.end_title}
+          impact_text={hero_section.impact_text}
+          CTA_buttons={hero_section.CTA_buttons}
+        />
       </section>
 
       {/* Benefits Section */}
@@ -344,8 +306,26 @@ const DataAutomationLanding = () => {
         </div>
       </section>
 
+      <section className="py-24 relative bg-transparent">
+        <StepByStep />
+        <div className="flex justify-center items-center w-full mx-auto my-6 py-6">
+          <NavLink
+            href="/pagina-produto/Dashboard-Inteligente-de-Custos-e-Vendas"
+            className="flex flex-row items-center gap-2 text-white border-2 border-indigo-500 bg-gradient-to-tr 
+            rounded-lg px-6 py-3 shadow-lg transition-all duration-300 ease-in-out active:bg-indigo-100 
+            hover:text-white hover:border-indigo-100 hover:scale-105 hover:shadow-xl 
+            hover:bg-gradient-to-b from-indigo-400 via-indigo-600 to-indigo-900 
+            hover:shadow-indigo-500/50 animate-pulse
+          "
+          >
+             Começar Agora
+            <AiFillThunderbolt className="text-cyan-600 w-6 h-6" />
+          </NavLink>
+        </div>
+      </section>
+
       {/* Features Section */}
-      <section className="py-24 bg-gradient-to-b from-zinc-900/20 to-black relative">
+      <section className="py-24 bg-transparent relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -834,14 +814,14 @@ const DataAutomationLanding = () => {
             </div>
           </div>
         </div>
-         <Link
-        href={
-          "https://wa.me/5531991097507?text=Ola%20vi%20o%20site%20da%20orion%2C%20gostaria%20de%20um%20servi%C3%A7o%2Fproduto%2C%20como%20podemos%20proseguir%20%3F"
-        }
-        className="fixed bottom-4 right-6 rounded-lg  p-0 m-0 z-10"
-      >
-        <FaWhatsappSquare className="text-green-500 w-12 h-12 bg-white rounded-lg border-indigo-500 border" />
-      </Link>
+        <Link
+          href={
+            "https://wa.me/5531991097507?text=Ola%20vi%20o%20site%20da%20orion%2C%20gostaria%20de%20um%20servi%C3%A7o%2Fproduto%2C%20como%20podemos%20proseguir%20%3F"
+          }
+          className="fixed bottom-4 right-6 rounded-lg  p-0 m-0 z-10"
+        >
+          <FaWhatsappSquare className="text-green-500 w-12 h-12 bg-white rounded-lg border-indigo-500 border" />
+        </Link>
       </section>
 
       {/* Footer */}

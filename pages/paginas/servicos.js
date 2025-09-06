@@ -13,6 +13,23 @@ const ServicesSection = ({
   const [hoveredService, setHoveredService] = useState(null);
 
   const services = [
+    {
+      id: 1,
+      icon: <FiCpu className="w-8 h-8" />,
+      title: "Automação com IA",
+      description:
+        "Sistemas inteligentes que automatizam processos complexos e aumentam a eficiência operacional.",
+      features: [
+        "Chatbots Inteligentes",
+        "Automação de Processos",
+        "Integração APIs",
+        "Análise Preditiva",
+      ],
+      price: "A partir de R$ 2.500",
+      priceDetail: "/mês",
+      popular: true,
+      color: "indigo",
+    },
     // {
     //   id: 1,
     //   icon: <FiCpu className="w-8 h-8" />,
@@ -185,7 +202,7 @@ const ServicesSection = ({
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className={`grid grid-cols-1 ${services.length <= 0 && "md:grid-cols-2 lg:grid-cols-3"} gap-8 mb-16`}>
           {services.map((service) => {
             const isHovered = hoveredService === service.id;
             const colorClasses = getColorClasses(service.color, isHovered);
@@ -193,7 +210,7 @@ const ServicesSection = ({
             return (
               <div
                 key={service.id}
-                className={`relative group p-8 rounded-xl transition-all duration-500 transform hover:scale-105 border-2 ${
+                className={`relative mx-auto w-[380px] group p-8 rounded-xl transition-all duration-500 transform hover:scale-105 border-2 ${
                   service.popular
                     ? "bg-gradient-to-br from-indigo-900/40 via-purple-800/30 to-orange-900/40 border-indigo-500"
                     : `bg-gradient-to-br ${colorClasses.bg} ${colorClasses.border}`
