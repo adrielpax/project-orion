@@ -21,7 +21,7 @@ const CTA = () => {
               Crie modelos de negócios de sucesso com nossas soluções de TI
             </h2>
             <p className="mt-3 text-white">
-              A ORION tech, empresa de desenvolvimento de software, auxilia na
+              A CLICK PULSO tech, empresa de desenvolvimento de software, auxilia na
               digitalização de negócios, concentrando-se nos desafios e
               necessidades dos clientes, desde do branding e marketing ao
               trafego e automação com agentes de IA, com uso de ferramentas como

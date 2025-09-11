@@ -11,9 +11,9 @@ const Navbar = () => {
   const { events } = useRouter();
 
   const navigation = [
-    { icon: <TableProperties/>, title: "Projetos", path: "/paginas/projetos" },
-    { icon: <HandCoins/>, title: "Serviços", path: "/paginas/servicos" },
-    { icon: <FlaskConical/>, title: "Gerador de Conteudo", path: "/pagina-produto/Dashboard-Inteligente-de-Custos-e-Vendas" },
+    // { icon: <TableProperties/>, title: "Projetos", path: "/paginas/projetos" },
+    // { icon: <HandCoins/>, title: "Serviços", path: "/paginas/servicos" },
+    // { icon: <FlaskConical/>, title: "Gerador de Conteudo", path: "/pagina-produto/page-two" },
   ];
 
   useEffect(() => {
@@ -108,7 +108,7 @@ const Navbar = () => {
               {!router.pathname.includes("/paginas/get-started") && (
                 <li>
                   <div className="flex justify-center items-center space-x-4">
-                    <NavLink
+                    {/* <NavLink
                       href="/paginas/get-started"
                       className="text-white border-2 border-indigo-500 bg-gradient-to-tr 
                     rounded-lg px-6 py-3 shadow-lg transition-all duration-300 ease-in-out active:bg-indigo-100 
@@ -117,7 +117,7 @@ const Navbar = () => {
                     hover:shadow-indigo-500/50 flex gap-2 items-center justify-center"
                     >
                       <HeartHandshake/> Vamos Colaborar 🚀
-                    </NavLink>
+                    </NavLink> */}
                   </div>
                 </li>
               )}
