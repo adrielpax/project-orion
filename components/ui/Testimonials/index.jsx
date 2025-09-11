@@ -16,7 +16,7 @@ const Testimonials = () => {
     //   name: "Karim ahmed",
     //   title: "DevOps engineer",
     //   quote:
-    //     "My company's software now is easy to use, saves time and money, and is loved by a lot of users. One customer saved $10k over the course of 3 years and another saves 8 hours per week! Thanks to ORION.",
+    //     "My company's software now is easy to use, saves time and money, and is loved by a lot of users. One customer saved $10k over the course of 3 years and another saves 8 hours per week! Thanks to CLICK PULSO.",
     // },
     // {
     //   avatar:
@@ -31,7 +31,7 @@ const Testimonials = () => {
     //   name: "Angela stian",
     //   title: "Product designer",
     //   quote:
-    //     "One day, my company was about to go under and I had no idea what to do. I found ORION and it helped me get my business back on track.Now, my company is flourishing and I see new opportunities.",
+    //     "One day, my company was about to go under and I had no idea what to do. I found CLICK PULSO and it helped me get my business back on track.Now, my company is flourishing and I see new opportunities.",
     // },
     // {
     //   avatar:
@@ -47,7 +47,7 @@ const Testimonials = () => {
     //   name: "Kavi laron",
     //   title: "Full stack engineer",
     //   quote:
-    //     "We all know how costly it is to find good help. I was faced with this problem when I lost my data entry staff and my business was on the brink of going under. Thankfully, ORION saved the day.",
+    //     "We all know how costly it is to find good help. I was faced with this problem when I lost my data entry staff and my business was on the brink of going under. Thankfully, CLICK PULSO saved the day.",
     // },
   ];
 

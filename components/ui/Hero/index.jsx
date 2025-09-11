@@ -40,28 +40,30 @@ const Hero = ({
           {/* Descubra como a automação pode transformar o fluxo da sua empresa e
           impulsionar o crescimento com soluções de tráfego e marketing
           inteligente e agentes de IA. */}
+          {/* hover:bg-gradient-to-b from-blue-400 via-blue-600 to-blue-900  */}
         </p>
         {CTA_buttons && (
           <div className="flex flex-col md:flex-row items-center justify-center gap-x-3 font-medium text-sm gap-y-3 md:gap-y-0 w-full md:w-auto">
             <NavLink
               href="/paginas/get-started"
-              className="flex flex-row items-center gap-2 text-white border-2 border-indigo-500 bg-gradient-to-tr 
-            rounded-lg px-6 py-3 shadow-lg transition-all duration-300 ease-in-out active:bg-indigo-100 
-            hover:text-white hover:border-indigo-100 hover:scale-105 hover:shadow-xl 
-            hover:bg-gradient-to-b from-indigo-400 via-indigo-600 to-indigo-900 
-            hover:shadow-indigo-500/50 animate-pulse
-            "
+              className="flex flex-row items-center gap-2 text-white border-2 border-red-500 bg-gradient-to-tr
+              from-gray-900 via-red-600 to-orange-600 
+              rounded-lg px-6 py-3 shadow-lg transition-all duration-300 ease-in-out  
+              hover:text-white  hover:scale-105 hover:shadow-xl hover:shadow-red-500/50"
+              //  animate-pulse font-bold
+              // hover:bg-gradient-to-tr hover:from-gray-900 hover:via-blue-600 hover:to-cyan-500
+              // hover:border-blue-400
             >
+              <AiFillThunderbolt className="text-white w-6 h-6" />
               Quero automatizar meu negócio
-              <AiFillThunderbolt className="text-orange-600 w-6 h-6" />
             </NavLink>
             <NavLink
               href="#cta"
-              className="text-white border border-gray-500 
-            bg-gradient-to-r from-zinc-700 
-            rounded-lg px-6 py-3 transition-all duration-300 ease-in-out active:bg-gray-900 
-            hover:text-white hover:border-zinc-100 hover:scale-105 hover:shadow-xl 
-            hover:bg-gradient-to-b via-zinc-600 to-zinc-900 
+              className="text-zinc-900 border border-white
+            bg-gradient-to-r from-white 
+            rounded-lg px-6 py-3 transition-all duration-300 ease-in-out active:bg-gray-400 
+            hover:text-zinc-900 hover:border-zinc-100 hover:scale-105 hover:shadow-xl 
+            hover:bg-gradient-to-b via-white to-white
             hover:shadow-zinc-500/50"
               scroll={false}
             >

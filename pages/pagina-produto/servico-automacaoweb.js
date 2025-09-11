@@ -89,7 +89,7 @@ const DataAutomationLanding = () => {
     ],
     // end_title: "automação e tráfego inteligente com agentes de IA",
     impact_text:
-      "👉 “A Orion automatiza processos para pequenos negócios e empresas, integrando WhatsApp, planilhas, sistemas e vendas em um só fluxo.”",
+      "👉 “A CLICK PULSO automatiza processos para pequenos negócios e empresas, integrando WhatsApp, planilhas, sistemas e vendas em um só fluxo.”",
     CTA_buttons: true,
   };
 
@@ -310,7 +310,7 @@ const DataAutomationLanding = () => {
         <StepByStep />
         <div className="flex justify-center items-center w-full mx-auto my-6 py-6">
           <NavLink
-            href="/pagina-produto/Dashboard-Inteligente-de-Custos-e-Vendas"
+            href="/pagina-produto/page-two"
             className="flex flex-row items-center gap-2 text-white border-2 border-indigo-500 bg-gradient-to-tr 
             rounded-lg px-6 py-3 shadow-lg transition-all duration-300 ease-in-out active:bg-indigo-100 
             hover:text-white hover:border-indigo-100 hover:scale-105 hover:shadow-xl 
@@ -816,7 +816,7 @@ const DataAutomationLanding = () => {
         </div>
         <Link
           href={
-            "https://wa.me/5531991097507?text=Ola%20vi%20o%20site%20da%20orion%2C%20gostaria%20de%20um%20servi%C3%A7o%2Fproduto%2C%20como%20podemos%20proseguir%20%3F"
+            "https://wa.me/5531991097507?text=Ola%20vi%20o%20site%20da%20click pulso%2C%20gostaria%20de%20um%20servi%C3%A7o%2Fproduto%2C%20como%20podemos%20proseguir%20%3F"
           }
           className="fixed bottom-4 right-6 rounded-lg  p-0 m-0 z-10"
         >
