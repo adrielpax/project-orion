@@ -32,6 +32,15 @@ importers:
       react-icons:
         specifier: ^5.5.0
         version: 5.5.0(react@18.3.1)
+      survey-core:
+        specifier: ^2.3.6
+        version: 2.3.6
+      survey-creator-react:
+        specifier: ^2.3.6
+        version: 2.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(survey-core@2.3.6)(survey-creator-core@2.3.6(survey-core@2.3.6))(survey-react-ui@2.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(survey-core@2.3.6))
+      survey-react-ui:
+        specifier: ^2.3.6
+        version: 2.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(survey-core@2.3.6)
     devDependencies:
       '@tailwindcss/forms':
         specifier: ^0.5.3
@@ -1596,6 +1605,40 @@ packages:
   supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+
+  survey-core@2.3.6:
+    resolution: {integrity: sha512-HJK4HurscNmj8zY9MFChPGlap7bZABxKJ2E8ggPvBSngkIXszzTs6CngASYg6dRrFVJqwxGhmfU3nt16ldmCpg==}
+
+  survey-creator-core@2.3.6:
+    resolution: {integrity: sha512-MErDjZmA4nIMCf03ZPzCwx2afXn24TNaX2oxsrKgzLWMvSzVEVuhHnRivwlal9s7zgDK6hEf8V8tjje7ho7XaA==}
+    engines: {node: '>=0.10.0'}
+    peerDependencies:
+      ace-builds: ^1.4.12
+      survey-core: 2.3.6
+    peerDependenciesMeta:
+      ace-builds:
+        optional: true
+
+  survey-creator-react@2.3.6:
+    resolution: {integrity: sha512-gutE81ZQRQPrEoHWvTpYJ0PUAnN7xDIvTOczh5Tdj/F9+bv0QtXrmAjJbJCqwNmcO98YYmtJFN5JKwGHR5xP/g==}
+    engines: {node: '>=0.10.0'}
+    peerDependencies:
+      ace-builds: ^1.4.12
+      react: ^16.5.0 || ^17.0.1 || ^18.1.0 || ^19.0.0
+      react-dom: ^16.5.0 || ^17.0.1 || ^18.1.0 || ^19.0.0
+      survey-core: 2.3.6
+      survey-creator-core: 2.3.6
+      survey-react-ui: 2.3.6
+    peerDependenciesMeta:
+      ace-builds:
+        optional: true
+
+  survey-react-ui@2.3.6:
+    resolution: {integrity: sha512-on4bcmxNV+bveZDGU0lIl7BKZulKUq2/mIS+2ONrl66viZ2SXTNx8f7jy1zic7QqXx2S9dA2kRki0jckD7HfXg==}
+    peerDependencies:
+      react: ^16.5.0 || ^17.0.1 || ^18.1.0 || ^19.0.0
+      react-dom: ^16.5.0 || ^17.0.1 || ^18.1.0 || ^19.0.0
+      survey-core: 2.3.6
 
   tailwindcss@3.4.17:
     resolution: {integrity: sha512-w33E2aCvSDP0tW9RZuNXadXlkHXqFzSkQew/aIa2i/Sj8fThxwovwlXHSPXTbAHwEIhBFXAedUhP2tueAKP8Og==}
@@ -3471,6 +3514,26 @@ snapshots:
       has-flag: 4.0.0
 
   supports-preserve-symlinks-flag@1.0.0: {}
+
+  survey-core@2.3.6: {}
+
+  survey-creator-core@2.3.6(survey-core@2.3.6):
+    dependencies:
+      survey-core: 2.3.6
+
+  survey-creator-react@2.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(survey-core@2.3.6)(survey-creator-core@2.3.6(survey-core@2.3.6))(survey-react-ui@2.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(survey-core@2.3.6)):
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      survey-core: 2.3.6
+      survey-creator-core: 2.3.6(survey-core@2.3.6)
+      survey-react-ui: 2.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(survey-core@2.3.6)
+
+  survey-react-ui@2.3.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(survey-core@2.3.6):
+    dependencies:
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
+      survey-core: 2.3.6
 
   tailwindcss@3.4.17:
     dependencies:
