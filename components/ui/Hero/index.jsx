@@ -45,7 +45,7 @@ const Hero = ({
         {CTA_buttons && (
           <div className="flex flex-col md:flex-row items-center justify-center gap-x-3 font-medium text-sm gap-y-3 md:gap-y-0 w-full md:w-auto">
             <NavLink
-              href="/paginas/get-started"
+              href="/pagina/question-lead-client"
               className="flex flex-row items-center gap-2 text-white border-2 border-red-500 bg-gradient-to-tr
               from-gray-900 via-red-600 to-orange-600 
               rounded-lg px-6 py-3 shadow-lg transition-all duration-300 ease-in-out  
@@ -57,7 +57,7 @@ const Hero = ({
               <AiFillThunderbolt className="text-white w-6 h-6" />
               Quero automatizar meu negócio
             </NavLink>
-            <NavLink
+           {/* { <NavLink
               href="#cta"
               className="text-zinc-900 border border-white
             bg-gradient-to-r from-white 
@@ -68,7 +68,7 @@ const Hero = ({
               scroll={false}
             >
               Ver demonstração
-            </NavLink>
+            </NavLink>} */}
           </div>
         )}
       </div>
