@@ -120,7 +120,7 @@ const ProjectGallery = ({
       <AiFillThunderbolt className="absolute bottom-[20%] right-[15%] text-yellow-500/10 w-80 h-80 -z-10 opacity-20 animate-pulse" />
       <AiFillThunderbolt className="absolute top-[60%] left-[70%] text-indigo-500/10 blur-md w-72 h-72 -z-10 opacity-15 animate-pulse" />
 
-      <div className="custom-screen py-28 text-white relative z-10">
+      <div className="custom-screen py-28 text-zinc-900 relative z-10">
         {/* Header */}
         <div className="text-center space-y-5 max-w-4xl mx-auto mb-16">
           <h2 className="text-4xl font-extrabold sm:text-5xl">
@@ -140,8 +140,8 @@ const ProjectGallery = ({
               onClick={() => setActiveFilter(category.id)}
               className={`px-6 py-3 rounded-lg font-medium text-sm transition-all duration-300 ease-in-out ${
                 activeFilter === category.id
-                  ? "text-white border-2 border-indigo-500 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 shadow-lg hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50"
-                  : "text-white border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 hover:border-zinc-100 hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b hover:shadow-zinc-500/50"
+                  ? "text-zinc-900 border-2 border-indigo-500 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 shadow-lg hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50"
+                  : "text-zinc-900 border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 hover:border-zinc-100 hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b hover:shadow-zinc-500/50"
               }`}
             >
               {category.label}
@@ -169,7 +169,7 @@ const ProjectGallery = ({
               {/* Featured Badge */}
               {project.featured && (
                 <div className="absolute top-4 right-4 z-20">
-                  <span className="bg-gradient-to-r from-orange-400 to-orange-600 text-white text-xs font-bold px-3 py-1 rounded-full animate-pulse">
+                  <span className="bg-gradient-to-r from-orange-400 to-orange-600 text-zinc-900 text-xs font-bold px-3 py-1 rounded-full animate-pulse">
                     Destaque
                   </span>
                 </div>
@@ -201,14 +201,14 @@ const ProjectGallery = ({
                 >
                   <Link
                     href={project.demoUrl}
-                    className="flex items-center gap-2 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 text-white px-4 py-2 rounded-lg font-medium text-sm shadow-lg hover:shadow-indigo-500/50 transition-all duration-300 hover:scale-105"
+                    className="flex items-center gap-2 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 text-zinc-900 px-4 py-2 rounded-lg font-medium text-sm shadow-lg hover:shadow-indigo-500/50 transition-all duration-300 hover:scale-105"
                   >
                     <AiOutlineEye className="w-4 h-4" />
                     ver mais
                   </Link>
                   {/* <a
                     href={project.githubUrl}
-                    className="flex items-center gap-2 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 text-white px-4 py-2 rounded-lg font-medium text-sm shadow-lg hover:shadow-zinc-500/50 transition-all duration-300 hover:scale-105"
+                    className="flex items-center gap-2 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 text-zinc-900 px-4 py-2 rounded-lg font-medium text-sm shadow-lg hover:shadow-zinc-500/50 transition-all duration-300 hover:scale-105"
                   >
                     <AiOutlineGithub className="w-4 h-4" />
                     Código
@@ -219,7 +219,7 @@ const ProjectGallery = ({
                 {/* Project Info */}
                 <div className="p-6">
                   <div className="flex items-start justify-between mb-3">
-                    <h3 className="text-xl font-bold text-white group-hover:text-transparent group-hover:bg-gradient-to-l group-hover:from-orange-400 group-hover:to-indigo-400 group-hover:bg-clip-text transition-all duration-300">
+                    <h3 className="text-xl font-bold text-zinc-900 group-hover:text-transparent group-hover:bg-gradient-to-l group-hover:from-orange-400 group-hover:to-indigo-400 group-hover:bg-clip-text transition-all duration-300">
                       {project.title}
                     </h3>
 
@@ -254,7 +254,7 @@ const ProjectGallery = ({
         {/* CTA Section */}
         <div className="text-center mt-16">
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-white">
+            <h3 className="text-2xl font-bold text-zinc-900">
               Pronto para transformar seu{" "}
               <span className="bg-gradient-to-l from-orange-400 to-indigo-900 text-transparent bg-clip-text">
                 negócio?
@@ -267,14 +267,14 @@ const ProjectGallery = ({
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a
                 href="/contato"
-                className="flex items-center gap-2 text-white border-2 border-indigo-500 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 rounded-lg px-8 py-3 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50 font-medium"
+                className="flex items-center gap-2 text-zinc-900 border-2 border-indigo-500 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 rounded-lg px-8 py-3 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50 font-medium"
               >
                 Iniciar Projeto
                 <AiFillThunderbolt className="text-orange-600 w-5 h-5" />
               </a>
               <a
                 href="/portfolio"
-                className="text-white border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 rounded-lg px-8 py-3 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50 font-medium"
+                className="text-zinc-900 border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 rounded-lg px-8 py-3 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50 font-medium"
               >
                 Ver Mais Projetos
               </a>

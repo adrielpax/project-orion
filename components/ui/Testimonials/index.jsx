@@ -55,10 +55,10 @@ const Testimonials = () => {
     <SectionWrapper className="pb-0">
       <div id="resultados" className="max-w-screen-xl mx-auto px-4 md:px-8">
         <div className="max-w-2xl sm:text-center md:mx-auto">
-          <h2 className="text-white text-3xl font-semibold sm:text-4xl">
+          <h2 className="text-zinc-900 text-3xl font-semibold sm:text-4xl">
             Veja o que estão dizendo sobre nós
           </h2>
-          <p className="mt-3 text-white">
+          <p className="mt-3 text-zinc-900">
             Nossos clientes estão satisfeitos com nossos serviços e soluções de
             TI. Veja o que eles têm a dizer sobre nós e como podemos ajudar sua
             empresa a crescer e se destacar no mercado.
@@ -80,16 +80,16 @@ const Testimonials = () => {
                       alt={item.name}
                     />
                     <div>
-                      <span className="block text-white font-semibold">
+                      <span className="block text-zinc-900 font-semibold">
                         {item.name}
                       </span>
-                      <span className="block text-white text-sm mt-0.5">
+                      <span className="block text-zinc-900 text-sm mt-0.5">
                         {item.title}
                       </span>
                     </div>
                   </div>
                   <blockquote>
-                    <p className="mt-6 text-white">{item.quote}</p>
+                    <p className="mt-6 text-zinc-900">{item.quote}</p>
                   </blockquote>
                 </figure>
               </li>

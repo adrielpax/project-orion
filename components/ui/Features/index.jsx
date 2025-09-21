@@ -10,32 +10,32 @@ import { RiVerifiedBadgeFill } from "react-icons/ri";
 const Features = () => {
   const features = [
     {
-      icon: <AiFillThunderbolt className="text-white w-6 h-6" />,
+      icon: <AiFillThunderbolt className="text-zinc-900 w-6 h-6" />,
       title: "Automação de Processos",
       desc: "Conectamos suas ferramentas, eliminamos tarefas repetitivas e criamos fluxos inteligentes que economizam tempo e dinheiro, com agentes de IA ( Inteligencia Artificial ) que aprendem e se adaptam.",
     },
     {
-      icon: <FaCode className="text-white w-6 h-6" />,
+      icon: <FaCode className="text-zinc-900 w-6 h-6" />,
       title: "Tecnologia de Ponta",
       desc: "Utilizamos as mais recentes tecnologias de automação e IA para garantir que sua empresa esteja sempre à frente, com soluções escaláveis e personalizadas, tecnologias como Integrations, APIs e automações avançadas, N8N.",
     },
     {
-      icon: <BsGraphUpArrow className="text-white w-6 h-6" />,
+      icon: <BsGraphUpArrow className="text-zinc-900 w-6 h-6" />,
       title: "Gestão de Tráfego Pago e Organico",
       desc: "Gerenciamos suas campanhas de tráfego pago e orgânico, otimizando resultados e maximizando o retorno sobre investimento, com estratégias baseadas em dados e inteligência de mercado.",
     },
     {
-      icon: <FaFunnelDollar className="text-white w-6 h-6" />,
+      icon: <FaFunnelDollar className="text-zinc-900 w-6 h-6" />,
       title: "Integrações e Funis Inteligentes",
       desc: "Criamos integrações personalizadas e funis de vendas inteligentes que conectam suas ferramentas e otimizam o fluxo de trabalho, garantindo uma experiência fluida para seus clientes e leads.",
     },
     {
-      icon: <FaDatabase className="text-white w-6 h-6" />,
+      icon: <FaDatabase className="text-zinc-900 w-6 h-6" />,
       title: "Gestão de Dados",
       desc: "Implementamos soluções de gestão de dados que permitem uma análise profunda e insights valiosos, ajudando sua empresa a tomar decisões informadas e estratégicas.",
     },
     {
-      icon: <IoLogoWhatsapp className="text-white w-6 h-6" />,
+      icon: <IoLogoWhatsapp className="text-zinc-900 w-6 h-6" />,
       title: "Chatbots e Assistentes Virtuais e formulários",
       desc: "Implementamos soluções de gestão de dados que permitem uma análise profunda e insights valiosos, ajudando sua empresa a tomar decisões informadas e estratégicas.",
     },
@@ -43,7 +43,7 @@ const Features = () => {
 
   return (
     <SectionWrapper>
-      <div id="solucoes" className="custom-screen text-white">
+      <div id="solucoes" className="custom-screen text-zinc-900">
         <div className="flex flex-col items-center justify-center mb-8">
           <h1 className="text-3xl font-semibold">
             O que fazemos para voçê e bem simples !
@@ -52,7 +52,7 @@ const Features = () => {
             <div className="flex items-center justify-center mt-4">
               <div
                 className="border border-[#272727] rounded-full py-2 px-4
-              text-lg font-semibold text-white pl-0 mr-4 bg-[#272727]/30"
+              text-lg font-semibold text-zinc-900 pl-0 mr-4 bg-[#272727]/30"
               >
                 <span
                   className="px-5 py-2 w-6 h-6 rounded-full border border-[#272727]
@@ -76,7 +76,7 @@ const Features = () => {
             <div className="flex items-center justify-center mt-4">
               <div
                 className="flex flex-col border border-[#272727] rounded-full py-2 px-4
-              text-lg font-semibold text-white pl-0 mr-4 bg-[#272727]/30"
+              text-lg font-semibold text-zinc-900 pl-0 mr-4 bg-[#272727]/30"
               >
                 <div>
                   <span
@@ -102,7 +102,7 @@ const Features = () => {
             <div className="flex items-center justify-center mt-4">
               <div
                 className="border border-[#272727] rounded-full py-2 px-4
-              text-lg font-semibold text-white pl-0 mr-4 bg-[#272727]/30"
+              text-lg font-semibold text-zinc-900 pl-0 mr-4 bg-[#272727]/30"
               >
                 <span
                   className="px-5 py-2 w-6 h-6 rounded-full border border-[#272727]
@@ -136,10 +136,10 @@ const Features = () => {
             >
               <RiVerifiedBadgeFill className="absolute h-6 w-6 text-green-600" />
 
-              <div className="w-12 h-12 border text-white rounded-full flex items-center justify-center border border-gray-500 ">
+              <div className="w-12 h-12 border text-zinc-900 rounded-full flex items-center justify-center border border-gray-500 ">
                 {item.icon}
               </div>
-              <h4 className="flex items-center gap-2 text-lg text-white font-semibold">
+              <h4 className="flex items-center gap-2 text-lg text-zinc-900 font-semibold">
                 {item.title}
               </h4>
               <p>{item.desc}</p>

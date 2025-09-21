@@ -1,4 +1,4 @@
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 pt-8 text-white relative ">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 pt-8 text-zinc-900 relative ">
           <div className="text-center space-y-8 max-w-4xl mx-auto">
             <div className="inline-block bg-gradient-to-r from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 rounded-full px-6 py-2 mb-6">
               <span className="text-indigo-300 font-medium">
@@ -35,12 +35,12 @@
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8">
-              <button className="flex items-center gap-3 text-white border-2 border-indigo-500 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 rounded-lg px-8 py-4 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50 font-semibold text-lg animate-pulse">
+              <button className="flex items-center gap-3 text-zinc-900 border-2 border-indigo-500 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 rounded-lg px-8 py-4 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50 font-semibold text-lg animate-pulse">
                 <AiFillThunderbolt className="text-orange-600 w-6 h-6" />
                 {/* Automatizar Agora - Grátis 30 dias */}
                 Automatizar Agora - Grátis {"   "}
               </button>
-              <button className="flex items-center gap-3 text-white border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 rounded-lg px-8 py-4 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50 font-semibold">
+              <button className="flex items-center gap-3 text-zinc-900 border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 rounded-lg px-8 py-4 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50 font-semibold">
                 <AiFillPlayCircle className="w-6 h-6" />
                 Ver Demonstração (3 min)
               </button>

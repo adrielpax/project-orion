@@ -1,22 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-.custom-screen {
-  @apply max-w-screen-xl mx-auto px-4 md:px-8;
+@layer base {
+  :root {
+    --background: 216 50% 3%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 13%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 13%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 290 88% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 13%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 290 88% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 13%;
+    --input: 0 0% 13%;
+    --ring: 290 88% 45%;
+    --radius: 0.5rem;
+  }
 }
 
-.gradient-border {
-  border: 1px solid transparent;
-  background: linear-gradient(white, white),
-    linear-gradient(
-      25deg,
-      rgba(209, 213, 219, 1),
-      rgba(209, 213, 219, 1),
-      rgba(0, 0, 0, 0.63),
-      rgba(209, 213, 219, 1),
-      rgba(209, 213, 219, 1)
-    );
-  background-clip: padding-box, border-box;
-  background-origin: padding-box, border-box;
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-white text-foreground;
+    font-family: 'Red Hat Display', sans-serif;
+  }
 }

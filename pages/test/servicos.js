@@ -189,7 +189,7 @@ const ServicesSection = ({
       <AiFillThunderbolt className="absolute top-[5%] right-[10%] text-indigo-500/10 blur-md w-72 h-72 -z-10 opacity-15 animate-pulse" />
       <AiFillThunderbolt className="absolute bottom-[15%] left-[5%] text-orange-500/10 w-64 h-64 -z-10 opacity-20 animate-pulse" />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 text-white relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 text-zinc-900 relative z-10">
         {/* Header */}
         <div className="text-center space-y-5 max-w-4xl mx-auto mb-16">
           <h2 className="text-4xl font-extrabold sm:text-5xl">
@@ -221,7 +221,7 @@ const ServicesSection = ({
                 {/* Popular Badge */}
                 {service.popular && (
                   <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <div className="flex items-center gap-1 bg-gradient-to-r from-orange-400 to-orange-600 text-white text-xs font-bold px-4 py-2 rounded-full animate-pulse">
+                    <div className="flex items-center gap-1 bg-gradient-to-r from-orange-400 to-orange-600 text-zinc-900 text-xs font-bold px-4 py-2 rounded-full animate-pulse">
                       <AiFillStar className="w-3 h-3" />
                       Mais Popular
                     </div>
@@ -241,7 +241,7 @@ const ServicesSection = ({
 
                 {/* Content */}
                 <div className="space-y-4">
-                  <h3 className="text-xl font-bold text-white group-hover:text-transparent group-hover:bg-gradient-to-l group-hover:from-orange-400 group-hover:to-indigo-400 group-hover:bg-clip-text transition-all duration-300">
+                  <h3 className="text-xl font-bold text-zinc-900 group-hover:text-transparent group-hover:bg-gradient-to-l group-hover:from-orange-400 group-hover:to-indigo-400 group-hover:bg-clip-text transition-all duration-300">
                     {service.title}
                   </h3>
 
@@ -280,8 +280,8 @@ const ServicesSection = ({
                   <button
                     className={`w-full mt-6 py-3 px-6 rounded-lg font-medium text-sm transition-all duration-300 ${
                       service.popular
-                        ? "bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 text-white border-2 border-indigo-500 hover:shadow-indigo-500/50"
-                        : "bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 text-white border border-gray-500 hover:border-zinc-100 hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50"
+                        ? "bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 text-zinc-900 border-2 border-indigo-500 hover:shadow-indigo-500/50"
+                        : "bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 text-zinc-900 border border-gray-500 hover:border-zinc-100 hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50"
                     } hover:scale-105 hover:shadow-xl`}
                   >
                     Solicitar Orçamento
@@ -295,7 +295,7 @@ const ServicesSection = ({
         {/* CTA Final */}
         <div className="text-center">
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-white">
+            <h3 className="text-2xl font-bold text-zinc-900">
               Não encontrou o que procura?{" "}
               <span className="bg-gradient-to-l from-orange-400 to-indigo-900 text-transparent bg-clip-text">
                 Vamos conversar!
@@ -305,7 +305,7 @@ const ServicesSection = ({
               Criamos soluções personalizadas para atender às necessidades
               específicas do seu negócio.
             </p>
-            <button className="text-white border-2 border-indigo-500 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 rounded-lg px-8 py-3 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50 font-medium">
+            <button className="text-zinc-900 border-2 border-indigo-500 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 rounded-lg px-8 py-3 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50 font-medium">
               Falar com Especialista
             </button>
           </div>

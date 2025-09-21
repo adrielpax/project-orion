@@ -71,22 +71,22 @@ const socialInfo = [
 const Footer = () => (
   <footer>
     <div className="custom-screen pt-16">
-      <p className="text-white">© 2023 CLICK PULSO Startup. All rights reserved.</p>
+      <p className="text-zinc-900">© 2023 CLICK PULSO Startup. All rights reserved.</p>
 
       <div className="mt-10 py-10 border-t border-[#272727] items-center justify-between sm:flex">
-        <p className="text-white">
+        <p className="text-zinc-900">
           {"{ }"} System Develop by{". "}
           <span>
             <Link
               href={"https://adrieldev.vercel.app/"}
               target={"_blank"}
-              className="text-white hover:text-indigo-500 duration-150 p-0"
+              className="text-zinc-900 hover:text-indigo-500 duration-150 p-0"
             >
               Adriel dev
             </Link>
           </span>
         </p>
-        <div className="flex items-center gap-x-6 text-white mt-6">
+        <div className="flex items-center gap-x-6 text-zinc-900 mt-6">
           {socialInfo.map((item, idx) => (
             <a
               key={idx}

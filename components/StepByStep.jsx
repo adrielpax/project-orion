@@ -5,7 +5,7 @@ function StepByStep() {
      <div className="space-y-8 max-w-4xl mx-auto text-center z-20">
               {/* Título */}
               <div className="space-y-4">
-                <h2 className="text-3xl text-white font-extrabold sm:text-4xl">
+                <h2 className="text-3xl text-zinc-900 font-extrabold sm:text-4xl">
                   {/* {title} */} Como funciona ?
                 </h2>
                 <p className="max-w-2xl mx-auto text-gray-300">
@@ -18,10 +18,10 @@ function StepByStep() {
                 <div className="space-y-2">
                   <div className="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full 
                     flex items-center justify-center mx-auto">
-                    {/* <AiFillThunderbolt className="w-6 h-6 text-white" /> */}
-                    <span className='text-white font-bold '>1</span>
+                    {/* <AiFillThunderbolt className="w-6 h-6 text-zinc-900" /> */}
+                    <span className='text-zinc-900 font-bold '>1</span>
                   </div>
-                  <h3 className="font-semibold text-white">Diagnostico Rapido</h3>
+                  <h3 className="font-semibold text-zinc-900">Diagnostico Rapido</h3>
                   <p className="text-gray-400 text-sm">
                     Nosso agente de IA analisa seu pedido e entrega uma solução eficiente de automação para seu processo.
                   </p>
@@ -30,11 +30,11 @@ function StepByStep() {
                 <div className="space-y-2">
                   <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-full 
                     flex items-center justify-center mx-auto">
-                    {/* <AiFillThunderbolt className="w-6 h-6 text-white" /> */}
-                    <span className='text-white font-bold '>2</span>
+                    {/* <AiFillThunderbolt className="w-6 h-6 text-zinc-900" /> */}
+                    <span className='text-zinc-900 font-bold '>2</span>
 
                   </div>
-                  <h3 className="font-semibold text-white">Solução Personalizada</h3>
+                  <h3 className="font-semibold text-zinc-900">Solução Personalizada</h3>
                   <p className="text-gray-400 text-sm">
                     Cada resposta é única para seu negócio, aplicamos nossa tecnologia e em minutos você tem automações inscriveis.
                   </p>
@@ -43,11 +43,11 @@ function StepByStep() {
                 <div className="space-y-2">
                   <div className="w-12 h-12 bg-gradient-to-r from-green-500 to-teal-600 rounded-full 
                     flex items-center justify-center mx-auto">
-                    {/* <AiFillThunderbolt className="w-6 h-6 text-white" /> */}
-                    <span className='text-white font-bold '>3</span>
+                    {/* <AiFillThunderbolt className="w-6 h-6 text-zinc-900" /> */}
+                    <span className='text-zinc-900 font-bold '>3</span>
 
                   </div>
-                  <h3 className="font-semibold text-white">Implementação Fácil</h3>
+                  <h3 className="font-semibold text-zinc-900">Implementação Fácil</h3>
                   <p className="text-gray-400 text-sm">
                     Instruções claras e práticas, O simples é essencial e eficiente. 
                   </p>
@@ -63,7 +63,7 @@ function StepByStep() {
                     placeholder={placeholder}
                     rows={6}
                     disabled={isLoading}
-                    className="w-full p-6 text-white bg-zinc-900/60
+                    className="w-full p-6 text-zinc-900 bg-zinc-900/60
                       border-2 border-indigo-500/30 rounded-xl resize-none 
                       focus:outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-500/20
                       placeholder-zinc-400 backdrop-blur-sm
@@ -82,11 +82,11 @@ function StepByStep() {
                 {/* <button
                   onClick={handleSubmit}
                   disabled={!prompt.trim() || isLoading}
-                  className="flex flex-end items-center justify-center gap-3 text-white border-2 border-indigo-500 
+                  className="flex flex-end items-center justify-center gap-3 text-zinc-900 border-2 border-indigo-500 
                     bg-gradient-to-tr from-indigo-600
                     rounded-xl px-8 py-4 font-medium text-lg
                     shadow-lg transition-all duration-300 ease-in-out 
-                    hover:text-white hover:border-indigo-100 hover:scale-105 hover:shadow-xl 
+                    hover:text-zinc-900 hover:border-indigo-100 hover:scale-105 hover:shadow-xl 
                     hover:bg-gradient-to-b via-indigo-600 to-indigo-900 
                     hover:shadow-indigo-500/50
                     disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100

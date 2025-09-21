@@ -9,13 +9,19 @@ const Hero = ({
   CTA_buttons,
 }) => (
   <section>
-    <div className="custom-screen py-28 text-white">
+    {/* <div className="flex self-center items-center mx-auto w-[50%] h-[2px] rounded-full
+    bg-red-500 shadow-lg border-b border
+    border-red-500 shadow-red-500 
+    transition-shadow animate-pulse">
+    </div> */}
+
+    <div className="custom-screen py-28 text-zinc-900">
       <div
         className={`space-y-5 max-w-4xl  z-20 
         ${text_left ? "text-left" : "text-center mx-auto"}`}
       >
         <h1
-          className={`text-4xl text-white font-extrabold mx-auto sm:text-5xl`}
+          className={`text-4xl text-zinc-900 font-extrabold mx-auto sm:text-5xl`}
         >
           {star_title}
           {/* Transforme sua empresa com soluções de{" "} */}
@@ -40,24 +46,37 @@ const Hero = ({
           {/* Descubra como a automação pode transformar o fluxo da sua empresa e
           impulsionar o crescimento com soluções de tráfego e marketing
           inteligente e agentes de IA. */}
-          {/* hover:bg-gradient-to-b from-blue-400 via-blue-600 to-blue-900  */}
+          {/* hover:bg-gradient-to-b from-cyan-400 via-cyan-600 to-cyan-900  */}
         </p>
         {CTA_buttons && (
           <div className="flex flex-col md:flex-row items-center justify-center gap-x-3 font-medium text-sm gap-y-3 md:gap-y-0 w-full md:w-auto">
-            <NavLink
+            {/* <NavLink
               href="/pagina/question-lead-client"
-              className="flex flex-row items-center gap-2 text-white border-2 border-red-500 bg-gradient-to-tr
+              className="flex flex-row items-center gap-2 text-zinc-900 border-2 border-red-500 bg-gradient-to-tr
               from-gray-900 via-red-600 to-orange-600 
               rounded-lg px-6 py-3 shadow-lg transition-all duration-300 ease-in-out  
-              hover:text-white  hover:scale-105 hover:shadow-xl hover:shadow-red-500/50"
+              hover:text-zinc-900  hover:scale-105 hover:shadow-xl hover:shadow-red-500/50"
               //  animate-pulse font-bold
-              // hover:bg-gradient-to-tr hover:from-gray-900 hover:via-blue-600 hover:to-cyan-500
-              // hover:border-blue-400
+              // hover:bg-gradient-to-tr hover:from-gray-900 hover:via-cyan-600 hover:to-cyan-500
+              // hover:border-cyan-400
+            >
+              <AiFillThunderbolt className="text-zinc-900 w-6 h-6" />
+              Quero automatizar meu negócio
+            </NavLink> */}
+              <NavLink
+              href="/pagina/question-lead-client"
+              className="flex flex-row items-center gap-2 border-2 border-cyan-400 bg-gradient-to-tr
+              from-gray-700 via-cyan-600 to-cyan-400 text-white
+              rounded-lg px-6 py-3 shadow-lg transition-all duration-300 ease-in-out  
+              font-extrabold  hover:scale-105 hover:shadow-xl hover:shadow-cyan-400/40 "
+              //  animate-pulse font-bold
+              // hover:bg-gradient-to-tr hover:from-gray-900 hover:via-cyan-600 hover:to-cyan-500
+              // hover:border-cyan-400
             >
               <AiFillThunderbolt className="text-white w-6 h-6" />
               Quero automatizar meu negócio
             </NavLink>
-           {/* { <NavLink
+            {/* { <NavLink
               href="#cta"
               className="text-zinc-900 border border-white
             bg-gradient-to-r from-white 
@@ -74,11 +93,11 @@ const Hero = ({
       </div>
       <AiFillThunderbolt
         className="absolute inset-0 md:top-[10%] left-[50%] text-cyan-500/10 blur-md md:w-96 md:h-96
-    -z-10 opacity-20 animate-pulse"
+    -z-10 animate-pulse"
       />
       <AiFillThunderbolt
         className="absolute top-[10%] left-[50%] text-yellow-500/10 md:w-96 md:h-96
-    -z-10 opacity-20 animate-pulse"
+    -z-10 animate-pulse"
       />
     </div>
   </section>

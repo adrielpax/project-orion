@@ -1,5 +1,10 @@
 import Link from "next/link";
-import { TableProperties, HandCoins,HeartHandshake, FlaskConical } from 'lucide-react';
+import {
+  TableProperties,
+  HandCoins,
+  HeartHandshake,
+  FlaskConical,
+} from "lucide-react";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Brand from "../Brand";
@@ -32,7 +37,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="bg-transparent top-0 left-0 w-full z-40 bg-blur-md backdrop-blur-md">
+    <header className="bg-transparent top-0 left-0 w-full z-40 bg-blur-md backdrop-blur-md rounded-full">
       <nav
         className={` w-full md:static md:text-sm ${
           state ? "fixed z-10 h-full bg-zinc-800" : ""
@@ -45,7 +50,7 @@ const Navbar = () => {
               <button
                 role="button"
                 aria-label="Open the menu"
-                className="text-white hover:text-white"
+                className="text-zinc-900 hover:text-zinc-900"
                 onClick={handleNavMenu}
               >
                 {state ? (
@@ -85,8 +90,7 @@ const Navbar = () => {
               state ? "" : "hidden"
             }`}
           >
-            <ul className="bg-zync-900 z-100 text-white justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0 md:text-white md:font-medium">
-      
+            <ul className="bg-zync-900 z-100 text-zinc-900 justify-end items-center space-y-6 md:flex md:space-x-6 md:space-y-0 md:text-zinc-900 md:font-medium">
               {navigation.map((item, idx) => {
                 return (
                   <li
@@ -110,9 +114,9 @@ const Navbar = () => {
                   <div className="flex justify-center items-center space-x-4">
                     {/* <NavLink
                       href="/paginas/get-started"
-                      className="text-white border-2 border-indigo-500 bg-gradient-to-tr 
+                      className="text-zinc-900 border-2 border-indigo-500 bg-gradient-to-tr 
                     rounded-lg px-6 py-3 shadow-lg transition-all duration-300 ease-in-out active:bg-indigo-100 
-                    hover:text-white hover:border-indigo-100 hover:scale-105 hover:shadow-xl 
+                    hover:text-zinc-900 hover:border-indigo-100 hover:scale-105 hover:shadow-xl 
                     hover:bg-gradient-to-b from-indigo-400 via-indigo-600 to-indigo-900 
                     hover:shadow-indigo-500/50 flex gap-2 items-center justify-center"
                     >

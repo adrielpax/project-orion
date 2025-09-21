@@ -44,7 +44,7 @@ const ToolKit = () => {
     <SectionWrapper>
       <div
         id="nossa-stack"
-        className="max-w-screen-xl mx-auto px-4 text-white md:px-8"
+        className="max-w-screen-xl mx-auto px-4 text-zinc-900 md:px-8"
       >
         <div className="mt-12">
           <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
@@ -64,7 +64,7 @@ const ToolKit = () => {
                   {/* <Image alt={item.title} /> */}
                 </div>
                 <div>
-                  <h4 className="text-lg text-white font-semibold">
+                  <h4 className="text-lg text-zinc-900 font-semibold">
                     {item.title}
                   </h4>
                   <p className="mt-3 text-zinc-400">{item.desc}</p>

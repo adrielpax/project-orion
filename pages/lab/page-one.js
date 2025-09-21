@@ -253,7 +253,7 @@ const HeroSection = ({ data }) => (
     <AiFillThunderbolt className="absolute top-[10%] left-[20%] text-cyan-500/10 blur-md w-96 h-96 -z-10 opacity-20 animate-pulse" />
     <AiFillThunderbolt className="absolute bottom-[20%] right-[15%] text-yellow-500/10 w-80 h-80 -z-10 opacity-20 animate-pulse" />
 
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 text-white relative">
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 text-zinc-900 relative">
       <div className="text-center space-y-8 max-w-4xl mx-auto">
         <div className="inline-block bg-gradient-to-r from-indigo-500/20 to-purple-500/20 border border-indigo-500/30 rounded-full px-6 py-2 mb-6">
           <span className="text-indigo-300 font-medium">{data.badgeText}</span>
@@ -272,11 +272,11 @@ const HeroSection = ({ data }) => (
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-8">
-          <button className="flex items-center gap-3 text-white border-2 border-indigo-500 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 rounded-lg px-8 py-4 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50 font-semibold text-lg animate-pulse">
+          <button className="flex items-center gap-3 text-zinc-900 border-2 border-indigo-500 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 rounded-lg px-8 py-4 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50 font-semibold text-lg animate-pulse">
             <AiFillThunderbolt className="text-orange-600 w-6 h-6" />
             {data.primaryCta}
           </button>
-          <button className="flex items-center gap-3 text-white border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 rounded-lg px-8 py-4 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50 font-semibold">
+          <button className="flex items-center gap-3 text-zinc-900 border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 rounded-lg px-8 py-4 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50 font-semibold">
             <AiFillPlayCircle className="w-6 h-6" />
             {data.secondaryCta}
           </button>
@@ -301,7 +301,7 @@ const BenefitsSection = ({ data }) => (
 
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-extrabold text-white sm:text-5xl mb-6">
+        <h2 className="text-4xl font-extrabold text-zinc-900 sm:text-5xl mb-6">
           Resultados que{" "}
           <span className="bg-gradient-to-l from-orange-400 to-indigo-900 text-transparent bg-clip-text">
             Impressionam
@@ -319,7 +319,7 @@ const BenefitsSection = ({ data }) => (
             <div className={`${benefit.color} mb-6 flex justify-center transform transition-transform duration-300 hover:scale-110`}>
               {benefit.icon}
             </div>
-            <h3 className="text-2xl font-bold text-white mb-4">{benefit.title}</h3>
+            <h3 className="text-2xl font-bold text-zinc-900 mb-4">{benefit.title}</h3>
             <p className="text-gray-300">{benefit.description}</p>
           </div>
         ))}
@@ -333,7 +333,7 @@ const FeaturesSection = ({ data }) => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         <div>
-          <h2 className="text-4xl font-extrabold text-white sm:text-5xl mb-8">
+          <h2 className="text-4xl font-extrabold text-zinc-900 sm:text-5xl mb-8">
             Recursos{" "}
             <span className="bg-gradient-to-l from-orange-400 to-indigo-900 text-transparent bg-clip-text">
               Poderosos
@@ -349,7 +349,7 @@ const FeaturesSection = ({ data }) => (
               >
                 <div className="text-indigo-400 flex-shrink-0 mt-1">{feature.icon}</div>
                 <div>
-                  <h3 className="font-semibold text-white text-lg mb-2">{feature.title}</h3>
+                  <h3 className="font-semibold text-zinc-900 text-lg mb-2">{feature.title}</h3>
                   <p className="text-gray-300">{feature.description}</p>
                 </div>
               </div>
@@ -360,7 +360,7 @@ const FeaturesSection = ({ data }) => (
         <div className="relative">
           <div className="bg-gradient-to-br from-indigo-900/30 via-purple-800/20 to-orange-900/30 border-2 border-indigo-500/30 rounded-2xl p-8 backdrop-blur-sm">
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-white mb-4">{data.demo.title}</h3>
+              <h3 className="text-2xl font-bold text-zinc-900 mb-4">{data.demo.title}</h3>
               <div className="h-64 bg-gradient-to-br from-zinc-900/80 to-zinc-800/60 rounded-lg border border-gray-600/50 flex items-center justify-center">
                 <div className="text-center text-gray-400">
                   <FiBarChart className="w-16 h-16 mx-auto mb-4 text-indigo-400" />
@@ -399,7 +399,7 @@ const TestimonialsSection = ({ data }) => {
       <AiFillThunderbolt className="absolute bottom-[10%] left-[5%] text-indigo-500/10 w-96 h-96 -z-10 opacity-15 animate-pulse" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-4xl font-extrabold text-white sm:text-5xl mb-16">
+        <h2 className="text-4xl font-extrabold text-zinc-900 sm:text-5xl mb-16">
           Clientes{" "}
           <span className="bg-gradient-to-l from-orange-400 to-indigo-900 text-transparent bg-clip-text">
             Satisfeitos
@@ -414,12 +414,12 @@ const TestimonialsSection = ({ data }) => {
               ))}
             </div>
 
-            <blockquote className="text-2xl font-medium text-white mb-8 leading-relaxed">
+            <blockquote className="text-2xl font-medium text-zinc-900 mb-8 leading-relaxed">
               "{data.items[currentTestimonial].text}"
             </blockquote>
 
             <div>
-              <div className="font-semibold text-white text-lg">
+              <div className="font-semibold text-zinc-900 text-lg">
                 {data.items[currentTestimonial].name}
               </div>
               <div className="text-indigo-400">
@@ -454,7 +454,7 @@ const PricingSection = ({ data }) => (
   <section className="py-24 bg-gradient-to-b from-zinc-900/20 to-black relative">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-extrabold text-white sm:text-5xl mb-6">
+        <h2 className="text-4xl font-extrabold text-zinc-900 sm:text-5xl mb-6">
           Planos que{" "}
           <span className="bg-gradient-to-l from-orange-400 to-indigo-900 text-transparent bg-clip-text">
             Se Adaptam
@@ -475,19 +475,19 @@ const PricingSection = ({ data }) => (
           >
             {plan.popular && (
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <div className="bg-gradient-to-r from-orange-400 to-orange-600 text-white text-sm font-bold px-4 py-2 rounded-full animate-pulse">
+                <div className="bg-gradient-to-r from-orange-400 to-orange-600 text-zinc-900 text-sm font-bold px-4 py-2 rounded-full animate-pulse">
                   Mais Popular
                 </div>
               </div>
             )}
 
             <div className="text-center mb-8">
-              <h3 className="text-2xl font-bold text-white mb-4">{plan.name}</h3>
+              <h3 className="text-2xl font-bold text-zinc-900 mb-4">{plan.name}</h3>
               <div className="mb-6">
                 <span className={`text-4xl font-extrabold ${
                   plan.popular
                     ? "bg-gradient-to-l from-orange-400 to-indigo-400 text-transparent bg-clip-text"
-                    : "text-white"
+                    : "text-zinc-900"
                 }`}>
                   {plan.price}
                 </span>
@@ -508,8 +508,8 @@ const PricingSection = ({ data }) => (
 
             <button className={`w-full py-4 px-6 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl ${
               plan.popular
-                ? "bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 text-white border-2 border-indigo-500 hover:shadow-indigo-500/50"
-                : "bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 text-white border border-gray-500 hover:border-zinc-100 hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50"
+                ? "bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 text-zinc-900 border-2 border-indigo-500 hover:shadow-indigo-500/50"
+                : "bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 text-zinc-900 border border-gray-500 hover:border-zinc-100 hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50"
             }`}>
               Começar Teste Grátis
             </button>
@@ -545,7 +545,7 @@ const ContactForm = ({ onSubmit, isSubmitting }) => {
     <form onSubmit={handleSubmit} className="space-y-6">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-2">
-          <label className="text-white font-medium flex items-center gap-2">
+          <label className="text-zinc-900 font-medium flex items-center gap-2">
             <FiUser className="w-4 h-4 text-indigo-400" />
             Nome *
           </label>
@@ -557,7 +557,7 @@ const ContactForm = ({ onSubmit, isSubmitting }) => {
             onFocus={() => setFocusedField("name")}
             onBlur={() => setFocusedField(null)}
             required
-            className={`w-full p-4 bg-black/50 border rounded-lg text-white placeholder-gray-400 transition-all duration-300 focus:outline-none ${
+            className={`w-full p-4 bg-black/50 border rounded-lg text-zinc-900 placeholder-gray-400 transition-all duration-300 focus:outline-none ${
               focusedField === "name"
                 ? "border-indigo-500 shadow-lg shadow-indigo-500/25"
                 : "border-gray-600"
@@ -567,7 +567,7 @@ const ContactForm = ({ onSubmit, isSubmitting }) => {
         </div>
 
         <div className="space-y-2">
-          <label className="text-white font-medium flex items-center gap-2">
+          <label className="text-zinc-900 font-medium flex items-center gap-2">
             <AiOutlineMail className="w-4 h-4 text-orange-400" />
             Email *
           </label>
@@ -579,7 +579,7 @@ const ContactForm = ({ onSubmit, isSubmitting }) => {
             onFocus={() => setFocusedField("email")}
             onBlur={() => setFocusedField(null)}
             required
-            className={`w-full p-4 bg-black/50 border rounded-lg text-white placeholder-gray-400 transition-all duration-300 focus:outline-none ${
+            className={`w-full p-4 bg-black/50 border rounded-lg text-zinc-900 placeholder-gray-400 transition-all duration-300 focus:outline-none ${
               focusedField === "email"
                 ? "border-orange-500 shadow-lg shadow-orange-500/25"
                 : "border-gray-600"
@@ -591,7 +591,7 @@ const ContactForm = ({ onSubmit, isSubmitting }) => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-2">
-          <label className="text-white font-medium flex items-center gap-2">
+          <label className="text-zinc-900 font-medium flex items-center gap-2">
             <FiSettings className="w-4 h-4 text-purple-400" />
             Empresa *
           </label>
@@ -603,7 +603,7 @@ const ContactForm = ({ onSubmit, isSubmitting }) => {
             onFocus={() => setFocusedField("company")}
             onBlur={() => setFocusedField(null)}
             required
-            className={`w-full p-4 bg-black/50 border rounded-lg text-white placeholder-gray-400 transition-all duration-300 focus:outline-none ${
+            className={`w-full p-4 bg-black/50 border rounded-lg text-zinc-900 placeholder-gray-400 transition-all duration-300 focus:outline-none ${
               focusedField === "company"
                 ? "border-purple-500 shadow-lg shadow-purple-500/25"
                 : "border-gray-600"
@@ -613,7 +613,7 @@ const ContactForm = ({ onSubmit, isSubmitting }) => {
         </div>
 
         <div className="space-y-2">
-          <label className="text-white font-medium flex items-center gap-2">
+          <label className="text-zinc-900 font-medium flex items-center gap-2">
             <AiOutlinePhone className="w-4 h-4 text-cyan-400" />
             Telefone
           </label>
@@ -624,7 +624,7 @@ const ContactForm = ({ onSubmit, isSubmitting }) => {
             onChange={handleInputChange}
             onFocus={() => setFocusedField("phone")}
             onBlur={() => setFocusedField(null)}
-            className={`w-full p-4 bg-black/50 border rounded-lg text-white placeholder-gray-400 transition-all duration-300 focus:outline-none ${
+            className={`w-full p-4 bg-black/50 border rounded-lg text-zinc-900 placeholder-gray-400 transition-all duration-300 focus:outline-none ${
               focusedField === "phone"
                 ? "border-cyan-500 shadow-lg shadow-cyan-500/25"
                 : "border-gray-600"
@@ -635,7 +635,7 @@ const ContactForm = ({ onSubmit, isSubmitting }) => {
       </div>
 
       <div className="space-y-2">
-        <label className="text-white font-medium flex items-center gap-2">
+        <label className="text-zinc-900 font-medium flex items-center gap-2">
           <FiMessageSquare className="w-4 h-4 text-green-400" />
           Descreva seu desafio com dados *
         </label>
@@ -647,7 +647,7 @@ const ContactForm = ({ onSubmit, isSubmitting }) => {
           onBlur={() => setFocusedField(null)}
           required
           rows={4}
-          className={`w-full p-4 bg-black/50 border rounded-lg text-white placeholder-gray-400 transition-all duration-300 focus:outline-none resize-none ${
+          className={`w-full p-4 bg-black/50 border rounded-lg text-zinc-900 placeholder-gray-400 transition-all duration-300 focus:outline-none resize-none ${
             focusedField === "message"
               ? "border-green-500 shadow-lg shadow-green-500/25"
               : "border-gray-600"
@@ -659,7 +659,7 @@ const ContactForm = ({ onSubmit, isSubmitting }) => {
       <button
         type="submit"
         disabled={isSubmitting}
-        className={`w-full py-4 px-6 rounded-lg font-semibold text-white transition-all duration-300 flex items-center justify-center gap-2 ${
+        className={`w-full py-4 px-6 rounded-lg font-semibold text-zinc-900 transition-all duration-300 flex items-center justify-center gap-2 ${
           isSubmitting
             ? "bg-gray-600 cursor-not-allowed"
             : "bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 border-2 border-indigo-500 hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50"
@@ -702,7 +702,7 @@ const ContactSection = ({ data }) => {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-white sm:text-5xl mb-6">
+          <h2 className="text-4xl font-extrabold text-zinc-900 sm:text-5xl mb-6">
             Pronto para{" "}
             <span className="bg-gradient-to-l from-orange-400 to-indigo-900 text-transparent bg-clip-text">
               Transformar?
@@ -715,26 +715,26 @@ const ContactSection = ({ data }) => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="bg-gradient-to-br from-indigo-900/30 via-purple-800/20 to-orange-900/30 border-2 border-indigo-500/30 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-white mb-6">Fale com um Especialista</h3>
+              <h3 className="text-2xl font-bold text-zinc-900 mb-6">Fale com um Especialista</h3>
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <AiOutlinePhone className="w-6 h-6 text-indigo-400" />
                   <div>
-                    <div className="font-semibold text-white">Telefone</div>
+                    <div className="font-semibold text-zinc-900">Telefone</div>
                     <div className="text-gray-300">{data.phone}</div>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
                   <AiOutlineMail className="w-6 h-6 text-orange-400" />
                   <div>
-                    <div className="font-semibold text-white">Email</div>
+                    <div className="font-semibold text-zinc-900">Email</div>
                     <div className="text-gray-300">{data.email}</div>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8 p-6 bg-black/30 rounded-lg border border-gray-600/30">
-                <h4 className="font-semibold text-white mb-3">Garantias Incluídas:</h4>
+                <h4 className="font-semibold text-zinc-900 mb-3">Garantias Incluídas:</h4>
                 <ul className="space-y-2 text-sm text-gray-300">
                   {data.guarantees.map((guarantee, index) => (
                     <li key={index} className="flex items-center gap-2">
@@ -749,7 +749,7 @@ const ContactSection = ({ data }) => {
 
           {/* Contact Form */}
           <div className="bg-gradient-to-br from-zinc-900/80 via-zinc-800/60 to-zinc-900/80 border border-gray-700/50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-white mb-6">
+            <h3 className="text-2xl font-bold text-zinc-900 mb-6">
               Receba uma{" "}
               <span className="bg-gradient-to-l from-orange-400 to-indigo-400 text-transparent bg-clip-text">
                 Proposta
@@ -761,7 +761,7 @@ const ContactSection = ({ data }) => {
 
         {/* Final CTA */}
         <div className="text-center mt-16 p-8 bg-gradient-to-br from-indigo-900/20 via-purple-800/15 to-orange-900/20 border border-indigo-500/30 rounded-2xl">
-          <h3 className="text-3xl font-bold text-white mb-4">
+          <h3 className="text-3xl font-bold text-zinc-900 mb-4">
             🌟 Seu Negócio no{" "}
             <span className="bg-gradient-to-l from-orange-400 to-indigo-900 text-transparent bg-clip-text">
               Topo do Google
@@ -772,11 +772,11 @@ const ContactSection = ({ data }) => {
             Sites profissionais que convertem e SEO que gera resultados reais.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <button className="flex items-center gap-2 text-white border-2 border-indigo-500 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 rounded-lg px-8 py-4 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50 font-semibold text-lg animate-pulse">
+            <button className="flex items-center gap-2 text-zinc-900 border-2 border-indigo-500 bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 rounded-lg px-8 py-4 shadow-lg transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:shadow-indigo-500/50 font-semibold text-lg animate-pulse">
               <AiFillThunderbolt className="text-orange-600 w-6 h-6" />
               Criar Meu Site Agora
             </button>
-            <button className="flex items-center gap-2 text-white border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 rounded-lg px-8 py-4 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50 font-semibold">
+            <button className="flex items-center gap-2 text-zinc-900 border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 rounded-lg px-8 py-4 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50 font-semibold">
               <FiDownload className="w-5 h-5" />
               Download Portfolio
             </button>
@@ -812,13 +812,13 @@ const Footer = ({ data }) => (
       <div className="text-center">
         <div className="flex items-center justify-center gap-2 mb-6">
           <AiFillThunderbolt className="w-8 h-8 text-indigo-400" />
-          <span className="text-2xl font-bold text-white">{data.companyName}</span>
+          <span className="text-2xl font-bold text-zinc-900">{data.companyName}</span>
         </div>
         <p className="text-gray-400 mb-8 max-w-2xl mx-auto">{data.description}</p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h4 className="font-semibold text-white mb-4">Produto</h4>
+            <h4 className="font-semibold text-zinc-900 mb-4">Produto</h4>
             <ul className="space-y-2 text-gray-400">
               {data.links.product.map((link, index) => (
                 <li key={index}>
@@ -830,7 +830,7 @@ const Footer = ({ data }) => (
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold text-white mb-4">Empresa</h4>
+            <h4 className="font-semibold text-zinc-900 mb-4">Empresa</h4>
             <ul className="space-y-2 text-gray-400">
               {data.links.company.map((link, index) => (
                 <li key={index}>
@@ -842,7 +842,7 @@ const Footer = ({ data }) => (
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold text-white mb-4">Suporte</h4>
+            <h4 className="font-semibold text-zinc-900 mb-4">Suporte</h4>
             <ul className="space-y-2 text-gray-400">
               {data.links.support.map((link, index) => (
                 <li key={index}>

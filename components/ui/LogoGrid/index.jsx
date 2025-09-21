@@ -26,7 +26,7 @@ const logos = [
 const LogoGrid = () => (
   <div>
     <div className="custom-screen">
-      <h2 className="font-semibold text-sm text-white text-center">
+      <h2 className="font-semibold text-sm text-zinc-900 text-center">
         USAMOS A MESMA ALTA TECNOLOGIA QUE EMPRESAS COMO:
       </h2>
       <div className="mt-6">
