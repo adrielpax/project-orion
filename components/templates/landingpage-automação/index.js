@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
-import NavLink from "../../components/ui/NavLink";
-import Hero from "../../components/ui/Hero";
-import StepByStep from "../../components/StepByStep";
+import NavLink from "../../../components/ui/NavLink";
+import Hero from "../../../components/ui/Hero";
+import StepByStep from "../../../components/StepByStep";
 import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 import { SiCloudflarepages } from "react-icons/si";
 import { BsStars } from "react-icons/bs";
 import { FaWhatsappSquare } from "react-icons/fa";
-import Sobre from "../../components/ui/About";
+import Sobre from "../../../components/ui/About";
+import CTA from "../../ui/CTA/index";
+import SectionWrapper from "../../SectionWrapper"
 import {
   AiFillThunderbolt,
   AiFillStar,
@@ -204,7 +206,7 @@ const DataAutomationLanding = () => {
   const pricingPlans = [
     {
       name: "Starter",
-      price: "Free ou 19,90",
+      price: "97",
       period: "/mês",
       popular: false,
       features: [
@@ -218,7 +220,7 @@ const DataAutomationLanding = () => {
     },
     {
       name: "Avançe",
-      price: "R$ 47",
+      price: "R$ 147",
       period: "/mês",
       popular: true,
       features: [
@@ -238,7 +240,7 @@ const DataAutomationLanding = () => {
     },
     {
       name: "Stark",
-      price: "R$ 97",
+      price: "R$ 397",
       period: "/mês",
       popular: false,
       features: [
@@ -275,7 +277,7 @@ const DataAutomationLanding = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-extrabold text-white sm:text-5xl mb-6">
               Resultados que{" "}
-              <span className="bg-gradient-to-l from-orange-400 to-indigo-900 text-transparent bg-clip-text">
+              <span className="bg-gradient-to-l from-cyan-400 to-indigo-900 text-transparent bg-clip-text">
                 Impressionam
               </span>
             </h2>
@@ -318,11 +320,15 @@ const DataAutomationLanding = () => {
             hover:shadow-indigo-500/50 animate-pulse
           "
           >
-             Começar Agora
+            Começar Agora
             <AiFillThunderbolt className="text-cyan-600 w-6 h-6" />
           </NavLink>
         </div>
       </section>
+
+            <SectionWrapper>
+              <CTA />
+            </SectionWrapper>
 
       {/* Features Section */}
       <section className="py-24 bg-transparent relative">
@@ -331,7 +337,7 @@ const DataAutomationLanding = () => {
             <div>
               <h2 className="text-4xl font-extrabold text-white sm:text-5xl mb-8">
                 Recursos{" "}
-                <span className="bg-gradient-to-l from-orange-400 to-indigo-900 text-transparent bg-clip-text">
+                <span className="bg-gradient-to-l from-orange-400 to-yellow-900 text-transparent bg-clip-text">
                   Poderosos
                 </span>
               </h2>
@@ -360,7 +366,9 @@ const DataAutomationLanding = () => {
               </div>
             </div>
 
+
             <div className="relative">
+                
               <div className="bg-gradient-to-br from-indigo-900/30 via-purple-800/20 to-orange-900/30 border-2 border-indigo-500/30 rounded-2xl p-8 backdrop-blur-sm">
                 {/* <div className="text-center mb-8">
                   <h3 className="text-2xl font-bold text-white mb-4">
@@ -408,7 +416,7 @@ const DataAutomationLanding = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-extrabold text-white sm:text-5xl mb-16">
             Clientes{" "}
-            <span className="bg-gradient-to-l from-orange-400 to-indigo-900 text-transparent bg-clip-text">
+            <span className="bg-gradient-to-l from-green-400 to-indigo-900 text-transparent bg-clip-text">
               Satisfeitos
             </span>
           </h2>
@@ -463,7 +471,7 @@ const DataAutomationLanding = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-extrabold text-white sm:text-5xl mb-6">
               Planos que{" "}
-              <span className="bg-gradient-to-l from-orange-400 to-indigo-900 text-transparent bg-clip-text">
+              <span className="bg-gradient-to-l from-green-400 to-blue-900 text-transparent bg-clip-text">
                 Se Adaptam
               </span>
             </h2>
@@ -526,7 +534,7 @@ const DataAutomationLanding = () => {
                   className={`w-full py-4 px-6 rounded-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-xl ${
                     plan.popular
                       ? "bg-gradient-to-tr from-indigo-400 via-indigo-600 to-indigo-900 text-white border-2 border-indigo-500 hover:shadow-indigo-500/50"
-                      : "bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 text-white border border-gray-500 hover:border-zinc-100 hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50"
+                      : "bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 text-white border border-gray-500 hover:border-zinc-100 hover:bg-gradient-to-b  hover:shadow-zinc-500/50"
                   }`}
                 >
                   Começar Teste Grátis
@@ -556,7 +564,7 @@ const DataAutomationLanding = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-extrabold text-white sm:text-5xl mb-6">
               Pronto para{" "}
-              <span className="bg-gradient-to-l from-orange-400 to-indigo-900 text-transparent bg-clip-text">
+              <span className="bg-gradient-to-l from-orange-400 to-red-900 text-transparent bg-clip-text">
                 Transformar?
               </span>
             </h2>
@@ -622,7 +630,7 @@ const DataAutomationLanding = () => {
             <div className="bg-gradient-to-br from-zinc-900/80 via-zinc-800/60 to-zinc-900/80 border border-gray-700/50 rounded-2xl p-8">
               <h3 className="text-2xl font-bold text-white mb-6">
                 Receba uma{" "}
-                <span className="bg-gradient-to-l from-orange-400 to-indigo-400 text-transparent bg-clip-text">
+                <span className="bg-gradient-to-l from-orange-400 to-yellow-400 text-transparent bg-clip-text">
                   Proposta
                 </span>
               </h3>
@@ -788,7 +796,7 @@ const DataAutomationLanding = () => {
                 <AiFillThunderbolt className="text-orange-600 w-6 h-6" />
                 Começar Teste Grátis Agora
               </button>
-              <button className="flex items-center gap-2 text-white border border-gray-500 bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 rounded-lg px-8 py-4 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50 font-semibold">
+              <button className="flex items-center gap-2 text-white border border-gray-500 bg-gradient-to-r  rounded-lg px-8 py-4 transition-all duration-300 ease-in-out hover:scale-105 hover:shadow-xl hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 hover:shadow-zinc-500/50 font-semibold">
                 <FiDownload className="w-5 h-5" />
                 Baixar Caso de Sucesso
               </button>

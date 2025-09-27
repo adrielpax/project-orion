@@ -11,7 +11,7 @@ const Sobre = () => {
       id="sobre"
       className="border-y border-[#272727] text-white py-24"
     >
-      <div className="custom-screen grid md:grid-cols-2 gap-10 items-center">
+      <div className="custom-screen flex flex-col gap-10 items-center justify-center">
         {/* Imagem do fundador */}
         <div className="flex justify-center md:justify-start">
           {/* <Image
@@ -22,19 +22,19 @@ const Sobre = () => {
             className="rounded-2xl shadow-xl object-cover"
           /> */}
           <img
-            className="rounded-full object-cover shadow-lg scale-75 select-none"
-            src="/perfil-pro.jpeg"
+            className="rounded-lg object-cover shadow-lg w-80 h-80 select-none"
+            src="/assets/perfil-pro.jpeg"
           />
         </div>
 
         {/* Texto de apresentação */}
-        <div>
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white">
-            Quem está por trás da{" "}
+        <div className="flex flex-col items-center justify-center w-full">
+          <h2 className="text-3xl sm:text-4xl font-bold mb-4 text-white w-full flex self-center">
+            Quem está por trás da{" "}Click Lab
             {/* <span>
               O R I <span className="text-indigo-600">O </span>N
             </span> */}
-            <Brand />
+            {/* <Brand /> */}
           </h2>
           <p className="text-gray-300 mb-6 leading-relaxed">
             Olá! Sou <strong>Adriel Lucas</strong>, um profissional apaixonado
@@ -45,8 +45,8 @@ const Sobre = () => {
           </p>
           <div className="grid sm:grid-cols-3 gap-6 text-center">
             <div
-              className="bg-zinc-950 cursor-default
-              text-gray-500 hover:text-gray-200
+              className="bg-transparent cursor-default
+              text-gray-500 
               hover:border-indigo-500 border hover:text-white 
               border-[#272727] p-4 rounded-xl shadow hover:scale-105 transition-all delay backdrop-blur-md"
             >
@@ -57,8 +57,8 @@ const Sobre = () => {
               </p>
             </div>
             <div
-              className="bg-zinc-950 cursor-default
-              text-gray-500 hover:text-gray-200
+              className="bg-transparent cursor-default
+              text-gray-500 
             hover:border-yellow-500 border hover:text-white border-[#272727] p-4 rounded-xl shadow hover:scale-105 transition-all delay backdrop-blur-md"
             >
               <h3 className="text-xl font-semibold text-yellow-500">Visão</h3>
@@ -68,8 +68,8 @@ const Sobre = () => {
               </p>
             </div>
             <div
-              className="bg-zinc-950 cursor-default
-              text-gray-500 hover:text-gray-200
+              className="bg-transparent cursor-default
+              text-gray-500 
             hover:border-cyan-500 border hover:text-white border-[#272727] p-4 rounded-xl shadow hover:scale-105 transition-all delay backdrop-blur-md"
             >
               <h3 className="text-xl font-semibold text-cyan-500">Valores</h3>
@@ -84,10 +84,10 @@ const Sobre = () => {
               href="https://www.linkedin.com/in/adriel-lucas/"
               target="_blank"
               className="text-white border border-[#272727]
-            bg-gradient-to-r from-zinc-700 via-zinc-800 to-zinc-900 
+            bg-gradient-to-r 
             rounded-lg px-6 py-3 transition-all duration-300 ease-in-out active:bg-gray-900 
             hover:text-white hover:border-zinc-100 hover:scale-105 hover:shadow-xl 
-            hover:bg-gradient-to-b from-zinc-400 via-zinc-600 to-zinc-900 
+            hover:bg-transparent
             hover:shadow-zinc-500/50  "
             >
               Saber Mais !

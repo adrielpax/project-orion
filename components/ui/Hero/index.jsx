@@ -46,10 +46,10 @@ const Hero = ({
           <div className="flex flex-col md:flex-row items-center justify-center gap-x-3 font-medium text-sm gap-y-3 md:gap-y-0 w-full md:w-auto">
             <NavLink
               href="/pagina/question-lead-client"
-              className="flex flex-row items-center gap-2 text-white border-2 border-red-500 bg-gradient-to-tr
-              from-gray-900 via-red-600 to-orange-600 
+              className="flex flex-row items-center gap-2 text-white border-2 border-cyan-500 bg-gradient-to-tr
+              from-gray-900 via-green-600 to-cyan-600 
               rounded-lg px-6 py-3 shadow-lg transition-all duration-300 ease-in-out  
-              hover:text-white  hover:scale-105 hover:shadow-xl hover:shadow-red-500/50"
+              hover:text-white  hover:scale-105 hover:shadow-xl hover:shadow-cyan-500/50"
               //  animate-pulse font-bold
               // hover:bg-gradient-to-tr hover:from-gray-900 hover:via-blue-600 hover:to-cyan-500
               // hover:border-blue-400

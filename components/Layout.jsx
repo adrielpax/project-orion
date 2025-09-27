@@ -7,7 +7,7 @@ const Layout = ({ children }) => {
     <>
       <Head>
         <title>
-          Agentes de AI e Automação de Processos, Trafego e Marketing | CLICK PULSO
+          Agentes de AI e Automação de Processos, Trafego e Marketing | CLICK LAB
         </title>
         <meta
           name="description"
