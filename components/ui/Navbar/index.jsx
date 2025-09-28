@@ -118,6 +118,17 @@ const Navbar = () => {
                     >
                       <HeartHandshake/> Vamos Colaborar 🚀
                     </NavLink> */}
+                    
+                         <NavLink
+                      href="/paginas/get-started"
+                      className="text-white border-2 border-transparent bg-transparent
+                    rounded-lg px-6 py-3 transition-all duration-300 ease-in-out active:bg-indigo-100 
+                    hover:text-white hover:border-cyan-100 hover:scale-105 hover:shadow-xl 
+                    hover:bg-cyan-400
+                    hover:shadow-cyan-500/50 flex gap-2 items-center justify-center"
+                    >
+                      <HeartHandshake/> Vamos Colaborar 🚀
+                    </NavLink>
                   </div>
                 </li>
               )}

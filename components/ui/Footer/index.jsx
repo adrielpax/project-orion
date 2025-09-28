@@ -71,7 +71,7 @@ const socialInfo = [
 const Footer = () => (
   <footer>
     <div className="custom-screen pt-16">
-      <p className="text-white">© 2023 CLICK PULSO Startup. All rights reserved.</p>
+      <p className="text-white">© 2023 CLICK LAB Startup. All rights reserved.</p>
 
       <div className="mt-10 py-10 border-t border-[#272727] items-center justify-between sm:flex">
         <p className="text-white">

@@ -1,6 +1,6 @@
 import SectionWrapper from "../../SectionWrapper";
 import NavLink from "../NavLink";
-import ctaImage from "../../../public/cta-image.jpg";
+import ctaImage from "../../../public/assets/cta-image.jpg";
 import Image from "next/image";
 import { AiFillThunderbolt } from "react-icons/ai";
 
@@ -21,7 +21,7 @@ const CTA = () => {
               Crie modelos de negócios de sucesso com nossas soluções de TI
             </h2>
             <p className="mt-3 text-white">
-              A CLICK PULSO tech, empresa de desenvolvimento de software, auxilia na
+              A CLICK LAB, empresa de desenvolvimento de software, auxilia na
               digitalização de negócios, concentrando-se nos desafios e
               necessidades dos clientes, desde do branding e marketing ao
               trafego e automação com agentes de IA, com uso de ferramentas como
@@ -31,15 +31,15 @@ const CTA = () => {
             </p>
             <NavLink
               href="/paginas/get-started"
-              className="flex items-center gap-2 inline-block mt-4 font-medium text-sm
-              text-white border-2 border-orange-500 bg-gradient-to-tr from-orange-400 via-orange-600 to-orange-900 
+              className="flex items-center gap-2 mt-4 text-sm
+              text-white border-2 border-orange-500 bg-gradient-to-tr
               rounded-lg px-6 py-3 shadow-lg transition-all duration-300 ease-in-out active:bg-orange-100 w-[fit-content]
-              hover:text-white hover:border-orange-100 hover:scale-105 hover:shadow-xl 
+              hover:text-white hover:border-cyan-100 hover:scale-105 hover:shadow-xl 
               hover:bg-gradient-to-b from-orange-400 via-orange-600 to-orange-900 
               hover:shadow-orange-500/50 font-bold animate-pulse"
             >
               Quero implementar hoje !
-              <AiFillThunderbolt className="text-purple-600 w-6 h-6" />
+              <AiFillThunderbolt className="text-cyan-400 w-6 h-6" />
             </NavLink>
           </div>
         </div>
