@@ -79,7 +79,7 @@ const DataAutomationLanding = () => {
 
   // Testimonials
   const hero_section = {
-    star_title: "Inpulsione sua empresa com",
+    star_title: "impulsione sua empresa com",
     end_title: [
       "Automação de Processos",
       "Tráfego e SEO Inteligente",
