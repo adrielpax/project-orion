@@ -56,55 +56,6 @@ export default function Home() {
       <Head>
         <meta name="robots" content="index" />
       </Head>
-      {/* <Hero
-        star_title={hero_section.star_title}
-        end_title={hero_section.end_title}
-        impact_text={hero_section.impact_text}
-        CTA_buttons={hero_section.CTA_buttons}
-      />
-
-      
-            <section className="py-24 relative bg-transparent">
-              <AiFillThunderbolt className="absolute top-[10%] right-[10%] text-purple-500/10 blur-md w-72 h-72 -z-10 opacity-15 animate-pulse" />
-      
-              <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-16">
-                  <h2 className="text-4xl font-extrabold text-white sm:text-5xl mb-6">
-                    Resultados que{" "}
-                    <span className="bg-gradient-to-l from-cyan-400 to-indigo-900 text-transparent bg-clip-text">
-                      Impressionam
-                    </span>
-                  </h2>
-                  <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                    Veja os benefícios reais que nossos clientes alcançaram em apenas
-                    30 dias
-                  </p>
-                </div>
-      
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                  {benefits.map((benefit, index) => (
-                    <div
-                      key={index}
-                      className="text-center p-8 bg-gradient-to-br from-zinc-900/50 to-zinc-800/30 rounded-2xl border border-gray-700/50 hover:border-gray-600/70 transition-all duration-300 hover:scale-105"
-                    >
-                      <div
-                        className={`${benefit.color} mb-6 flex justify-center transform transition-transform duration-300 hover:scale-110`}
-                      >
-                        {benefit.icon}
-                      </div>
-                      <h3 className="text-2xl font-bold text-white mb-4">
-                        {benefit.title}
-                      </h3>
-                      <p className="text-gray-300">{benefit.description}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </section>
-
-      <SectionWrapper>
-        <CTA/>
-      </SectionWrapper> */}
 
       <DataAutomationLanding/>
 
