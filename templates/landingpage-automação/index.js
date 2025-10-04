@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
-import NavLink from "../../../components/ui/NavLink";
-import Hero from "../../../components/ui/Hero";
-import StepByStep from "../../../components/StepByStep";
+import NavLink from "../../components/ui/NavLink";
+import Hero from "../../components/ui/Hero";
+import StepByStep from "../../components/StepByStep";
 import { FaInstagram } from "react-icons/fa";
 import Link from "next/link";
 import { SiCloudflarepages } from "react-icons/si";
 import { BsStars } from "react-icons/bs";
 import { FaWhatsappSquare } from "react-icons/fa";
-import Sobre from "../../../components/ui/About";
-import CTA from "../../ui/CTA/index";
-import SectionWrapper from "../../SectionWrapper"
+import Sobre from "../../components/ui/About";
+import CTA from "../../components/ui/CTA/index";
+import SectionWrapper from "../../components/SectionWrapper"
 import {
   AiFillThunderbolt,
   AiFillStar,
